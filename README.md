@@ -450,6 +450,26 @@ docker run ... -v $PWD:/w -e LD_PRELOAD=/w/ltguard.so -e LTGUARD_LOG=1 ...
 #   [LTGUARD] pid=1 matmul calls=3144 cluster shape rewritten=248 (cache hits 184) left unsafe=0
 ```
 
+**Where the guard is needed: Hopper under an MPS percentage share, and nowhere else we tested.**
+
+| Configuration | Wrong results without the guard | Enable the guard? |
+|---|---|---|
+| Hopper (H200, CC 9.0), `CUDA_MPS_ACTIVE_THREAD_PERCENTAGE` < 100, cuBLAS ≥ 12.6.4.1, FP16 / BF16 / FP8 | yes (66 of 100 shares) | **yes** |
+| Hopper, 100 % or no MPS | no | not needed |
+| Hopper, MIG instances (all six H200 profiles) | no | not needed |
+| Hopper, cuBLAS 12.4.5.8 | no (`algoId=66` is never selected) | not needed |
+| Hopper, FP32 | no | not needed |
+| Blackwell: B200 (CC 10.0), RTX PRO 6000 (CC 12.0) | no | **no** |
+
+- On Blackwell there is nothing to guard against, and the guard has **not been run there at all**: every B200 and
+  RTX PRO 6000 result in this repository is unguarded. Enabling it would rewrite cluster shapes that are
+  correct (4- and 8-CTA shapes on the B200, including the FP4 algorithms 70 / 71), with unverified results and
+  a throughput cost.
+- `ltguard.c` does not check the GPU architecture. Whoever injects it has to decide per node, e.g. set
+  `LD_PRELOAD` only on Hopper nodes or set `LTGUARD_DISABLE=1` elsewhere.
+- H100 was not tested. It has the same architecture and SM count as the H200, so the same behaviour is
+  expected but not verified.
+
 Correctness, H200, cuBLAS 13.1.1.3, every share from 1 to 100 %:
 
 | Harness | without the guard | with the guard |
