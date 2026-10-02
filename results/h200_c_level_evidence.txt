@@ -1,0 +1,199 @@
+
+### section 3: MPS 12 % / 14 %, default heuristic
+device=NVIDIA H200 physical/visible SMs=14  MPS pct=12  m=1000 n=16 k=2048  cublasLt=130401
+target=0   #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+device=NVIDIA H200 physical/visible SMs=18  MPS pct=14  m=1000 n=16 k=2048  cublasLt=130401
+target=0   #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+
+### section 3: MPS 40 %, 2048 x 2048 x 2048
+device=NVIDIA H200 physical/visible SMs=52  MPS pct=40  m=2048 n=2048 k=2048  cublasLt=130401
+target=0   #0  algo[id=66 tile=29 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=491520/4194304 unwritten=491520 bad_rows=[512..2047]
+
+### 5.2 SM_COUNT_TARGET sweep, full GPU without MPS
+device=NVIDIA H200 physical/visible SMs=132  MPS pct=-  m=1000 n=16 k=2048  cublasLt=130401
+target=0   #0  algo[id=66 tile=10 stages=35 custom=3 cluster=7] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=8   #0  algo[id=66 tile=394 stages=35 custom=1 cluster=4] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=10  #0  algo[id=66 tile=394 stages=35 custom=1 cluster=4] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=12  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=14  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=16  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=18  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=20  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=22  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=24  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=26  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=28  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=30  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=32  #0  algo[id=66 tile=10 stages=35 custom=3 cluster=7] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=36  #0  algo[id=66 tile=10 stages=35 custom=3 cluster=7] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=40  #0  algo[id=66 tile=10 stages=35 custom=3 cluster=7] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=48  #0  algo[id=66 tile=10 stages=35 custom=3 cluster=7] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=64  #0  algo[id=66 tile=10 stages=35 custom=3 cluster=7] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=132 #0  algo[id=66 tile=10 stages=35 custom=3 cluster=7] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+
+### 5.2 SM_COUNT_TARGET sweep, MPS 14 %
+device=NVIDIA H200 physical/visible SMs=18  MPS pct=14  m=1000 n=16 k=2048  cublasLt=130401
+target=0   #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+target=8   #0  algo[id=66 tile=394 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=7808/16000 unwritten=7808 bad_rows=[512..999]
+target=10  #0  algo[id=66 tile=394 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=7808/16000 unwritten=7808 bad_rows=[512..999]
+target=12  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  CORRUPT bad=9856/16000 unwritten=9856 bad_rows=[384..999]
+target=14  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  CORRUPT bad=9856/16000 unwritten=9856 bad_rows=[384..999]
+target=16  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+target=18  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+target=20  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+target=22  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+target=24  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+target=26  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+target=28  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+target=30  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+target=32  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+target=36  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+target=40  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+target=48  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+target=64  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+target=132 #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+
+### 5.2 SM_COUNT_TARGET sweep, MPS 12 %
+device=NVIDIA H200 physical/visible SMs=14  MPS pct=12  m=1000 n=16 k=2048  cublasLt=130401
+target=0   #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=8   #0  algo[id=66 tile=394 stages=35 custom=1 cluster=4] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=10  #0  algo[id=66 tile=394 stages=35 custom=1 cluster=4] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=12  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=14  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=16  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=18  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=20  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=22  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=24  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=26  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=28  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=30  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=32  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=36  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=40  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=48  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=64  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=132 #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+
+### 5.2 kernel launches (clog.so): full GPU target 18 / MPS 14 % / MPS 12 % / MPS 14 % target 12
+target=18  #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+[CLOG] launch rc=0 grid=4x4x1 block=384x1x1 smem=180700 cluster=4x1x1 ?
+target=0   #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+[CLOG] launch rc=0 grid=4x4x1 block=384x1x1 smem=180700 cluster=4x1x1 ?
+target=0   #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+[CLOG] launch rc=0 grid=4x3x1 block=384x1x1 smem=221468 cluster=4x1x1 ?
+target=12  #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  CORRUPT bad=9856/16000 unwritten=9856 bad_rows=[384..999]
+[CLOG] launch rc=0 grid=4x3x1 block=384x1x1 smem=221468 cluster=4x1x1 ?
+
+### 5.2 cuOccupancyMaxActiveClusters answers by cluster size (1,2,3,...; sizes not queried = 0)
+full GPU : 0,0,39,30,22,17,15,15,9,7,7,7,7,7,7,7
+MPS 14 % : 0,0,5,4,3,2,2,2,1,1,1,1,1,1,1,1
+MPS 12 % : 0,0,4,3,2,2,1,1,1,1,1,1,1,1
+
+### 5.2 swapping the reported SM count / cluster occupancy (smspoof.so)
+full GPU, SM=18 + occupancy(MPS 14 %):
+target=0   #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+full GPU, SM=18 only:
+target=0   #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+full GPU, occupancy(MPS 14 %) only:
+target=0   #0  algo[id=66 tile=10 stages=35 custom=3 cluster=5] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+MPS 14 %, SM=14 only:
+target=0   #0  algo[id=66 tile=448 stages=35 custom=3 cluster=6] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+MPS 14 %, SM=132 only:
+target=0   #0  algo[id=66 tile=10 stages=35 custom=3 cluster=5] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+MPS 14 %, occupancy(full GPU) only:
+target=0   #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+
+### 5.3 cluster_probe (grid gx gy, cluster cx cy, threads, dynamic shared memory; 20 repetitions)
+SMs=132 pct=- grid=4x4 cluster=4x1 threads=384 smem=180692 occ=30(rc=0) launch=0 sync=0  ran=16/16 dsmem_bad=0 distinct_smid=16 smid_range=[0..23] OK
+  reps=20 failing_reps=0
+SMs=132 pct=- grid=4x3 cluster=4x1 threads=384 smem=221460 occ=30(rc=0) launch=0 sync=0  ran=12/12 dsmem_bad=0 distinct_smid=12 smid_range=[0..21] OK
+  reps=20 failing_reps=0
+SMs=132 pct=- grid=4x4 cluster=2x2 threads=384 smem=180692 occ=30(rc=0) launch=0 sync=0  ran=16/16 dsmem_bad=0 distinct_smid=16 smid_range=[0..23] OK
+  reps=20 failing_reps=0
+SMs=132 pct=- grid=8x2 cluster=8x1 threads=128 smem=180692 occ=15(rc=0) launch=0 sync=0  ran=16/16 dsmem_bad=0 distinct_smid=16 smid_range=[0..51] OK
+  reps=20 failing_reps=0
+SMs=132 pct=- grid=16x4 cluster=4x1 threads=128 smem=1024 occ=248(rc=0) launch=0 sync=0  ran=64/64 dsmem_bad=0 distinct_smid=64 smid_range=[0..63] OK
+  reps=20 failing_reps=0
+SMs=14 pct=12 grid=4x4 cluster=4x1 threads=384 smem=180692 occ=3(rc=0) launch=0 sync=0  ran=16/16 dsmem_bad=0 distinct_smid=12 smid_range=[0..11] OK
+  reps=20 failing_reps=0
+SMs=14 pct=12 grid=4x3 cluster=4x1 threads=384 smem=221460 occ=3(rc=0) launch=0 sync=0  ran=12/12 dsmem_bad=0 distinct_smid=12 smid_range=[0..11] OK
+  reps=20 failing_reps=0
+SMs=14 pct=12 grid=4x4 cluster=2x2 threads=384 smem=180692 occ=3(rc=0) launch=0 sync=0  ran=16/16 dsmem_bad=0 distinct_smid=12 smid_range=[0..11] OK
+  reps=20 failing_reps=0
+SMs=14 pct=12 grid=8x2 cluster=8x1 threads=128 smem=180692 occ=1(rc=0) launch=0 sync=0  ran=16/16 dsmem_bad=0 distinct_smid=8 smid_range=[0..7] OK
+  reps=20 failing_reps=0
+SMs=14 pct=12 grid=16x4 cluster=4x1 threads=128 smem=1024 occ=28(rc=0) launch=0 sync=0  ran=64/64 dsmem_bad=0 distinct_smid=12 smid_range=[0..11] OK
+  reps=20 failing_reps=0
+SMs=18 pct=14 grid=4x4 cluster=4x1 threads=384 smem=180692 occ=4(rc=0) launch=0 sync=0  ran=16/16 dsmem_bad=0 distinct_smid=16 smid_range=[0..15] OK
+  reps=20 failing_reps=0
+SMs=18 pct=14 grid=4x3 cluster=4x1 threads=384 smem=221460 occ=4(rc=0) launch=0 sync=0  ran=12/12 dsmem_bad=0 distinct_smid=12 smid_range=[0..11] OK
+  reps=20 failing_reps=0
+SMs=18 pct=14 grid=4x4 cluster=2x2 threads=384 smem=180692 occ=4(rc=0) launch=0 sync=0  ran=16/16 dsmem_bad=0 distinct_smid=16 smid_range=[0..15] OK
+  reps=20 failing_reps=0
+SMs=18 pct=14 grid=8x2 cluster=8x1 threads=128 smem=180692 occ=2(rc=0) launch=0 sync=0  ran=16/16 dsmem_bad=0 distinct_smid=16 smid_range=[0..15] OK
+  reps=20 failing_reps=0
+SMs=18 pct=14 grid=16x4 cluster=4x1 threads=128 smem=1024 occ=36(rc=0) launch=0 sync=0  ran=64/64 dsmem_bad=0 distinct_smid=16 smid_range=[0..15] OK
+  reps=20 failing_reps=0
+SMs=20 pct=16 grid=4x4 cluster=4x1 threads=384 smem=180692 occ=5(rc=0) launch=0 sync=0  ran=16/16 dsmem_bad=0 distinct_smid=16 smid_range=[0..15] OK
+  reps=20 failing_reps=0
+SMs=20 pct=16 grid=4x3 cluster=4x1 threads=384 smem=221460 occ=5(rc=0) launch=0 sync=0  ran=12/12 dsmem_bad=0 distinct_smid=12 smid_range=[0..11] OK
+  reps=20 failing_reps=0
+SMs=20 pct=16 grid=4x4 cluster=2x2 threads=384 smem=180692 occ=5(rc=0) launch=0 sync=0  ran=16/16 dsmem_bad=0 distinct_smid=16 smid_range=[0..15] OK
+  reps=20 failing_reps=0
+SMs=20 pct=16 grid=8x2 cluster=8x1 threads=128 smem=180692 occ=2(rc=0) launch=0 sync=0  ran=16/16 dsmem_bad=0 distinct_smid=16 smid_range=[0..15] OK
+  reps=20 failing_reps=0
+SMs=20 pct=16 grid=16x4 cluster=4x1 threads=128 smem=1024 occ=40(rc=0) launch=0 sync=0  ran=64/64 dsmem_bad=0 distinct_smid=20 smid_range=[0..19] OK
+  reps=20 failing_reps=0
+SMs=26 pct=20 grid=4x4 cluster=4x1 threads=384 smem=180692 occ=6(rc=0) launch=0 sync=0  ran=16/16 dsmem_bad=0 distinct_smid=16 smid_range=[0..15] OK
+  reps=20 failing_reps=0
+SMs=26 pct=20 grid=4x3 cluster=4x1 threads=384 smem=221460 occ=6(rc=0) launch=0 sync=0  ran=12/12 dsmem_bad=0 distinct_smid=12 smid_range=[0..11] OK
+  reps=20 failing_reps=0
+SMs=26 pct=20 grid=4x4 cluster=2x2 threads=384 smem=180692 occ=6(rc=0) launch=0 sync=0  ran=16/16 dsmem_bad=0 distinct_smid=16 smid_range=[0..15] OK
+  reps=20 failing_reps=0
+SMs=26 pct=20 grid=8x2 cluster=8x1 threads=128 smem=180692 occ=3(rc=0) launch=0 sync=0  ran=16/16 dsmem_bad=0 distinct_smid=16 smid_range=[0..15] OK
+  reps=20 failing_reps=0
+SMs=26 pct=20 grid=16x4 cluster=4x1 threads=128 smem=1024 occ=48(rc=0) launch=0 sync=0  ran=64/64 dsmem_bad=0 distinct_smid=24 smid_range=[0..23] OK
+  reps=20 failing_reps=0
+SMs=52 pct=40 grid=4x4 cluster=4x1 threads=384 smem=180692 occ=13(rc=0) launch=0 sync=0  ran=16/16 dsmem_bad=0 distinct_smid=16 smid_range=[0..15] OK
+  reps=20 failing_reps=0
+SMs=52 pct=40 grid=4x3 cluster=4x1 threads=384 smem=221460 occ=13(rc=0) launch=0 sync=0  ran=12/12 dsmem_bad=0 distinct_smid=12 smid_range=[0..11] OK
+  reps=20 failing_reps=0
+SMs=52 pct=40 grid=4x4 cluster=2x2 threads=384 smem=180692 occ=13(rc=0) launch=0 sync=0  ran=16/16 dsmem_bad=0 distinct_smid=16 smid_range=[0..15] OK
+  reps=20 failing_reps=0
+SMs=52 pct=40 grid=8x2 cluster=8x1 threads=128 smem=180692 occ=6(rc=0) launch=0 sync=0  ran=16/16 dsmem_bad=0 distinct_smid=16 smid_range=[0..15] OK
+  reps=20 failing_reps=0
+SMs=52 pct=40 grid=16x4 cluster=4x1 threads=128 smem=1024 occ=104(rc=0) launch=0 sync=0  ran=64/64 dsmem_bad=0 distinct_smid=52 smid_range=[0..51] OK
+  reps=20 failing_reps=0
+
+### 5.4 cluster shape override through cublasLtMatmulAlgoConfigSetAttribute (LT_CLUSTER: 2=1x1x1 3=2x1x1 5=1x2x1)
+MPS 14 % LT_CLUSTER=as selected:
+target=0   #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+MPS 14 % LT_CLUSTER=2:
+  override cluster=2 (attr size 2) set=0 check=0 state=0 workspace=0 (orig 0)
+target=0   #0  algo[id=66 tile=312 stages=35 custom=1 cluster=2] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+MPS 14 % LT_CLUSTER=3:
+  override cluster=3 (attr size 2) set=0 check=0 state=0 workspace=0 (orig 0)
+target=0   #0  algo[id=66 tile=312 stages=35 custom=1 cluster=3] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+MPS 14 % LT_CLUSTER=5:
+  override cluster=5 (attr size 2) set=0 check=0 state=0 workspace=0 (orig 0)
+target=0   #0  algo[id=66 tile=312 stages=35 custom=1 cluster=5] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+MPS 40 % LT_CLUSTER=as selected:
+target=0   #0  algo[id=66 tile=10 stages=35 custom=3 cluster=7] status=0 sync=0  CORRUPT bad=7808/16000 unwritten=7808 bad_rows=[512..999]
+MPS 40 % LT_CLUSTER=2:
+  override cluster=2 (attr size 2) set=0 check=0 state=0 workspace=0 (orig 0)
+target=0   #0  algo[id=66 tile=10 stages=35 custom=3 cluster=2] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+MPS 40 % LT_CLUSTER=3:
+  override cluster=3 (attr size 2) set=0 check=0 state=0 workspace=0 (orig 0)
+target=0   #0  algo[id=66 tile=10 stages=35 custom=3 cluster=3] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+MPS 40 % LT_CLUSTER=5:
+  override cluster=5 (attr size 2) set=0 check=0 state=0 workspace=0 (orig 0)
+target=0   #0  algo[id=66 tile=10 stages=35 custom=3 cluster=5] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+
+### candidates returned by the heuristic at MPS 14 % (LT_ENUM=24)
+device=NVIDIA H200 physical/visible SMs=18  MPS pct=14  m=1000 n=16 k=2048  cublasLt=130401
+target=0   #0  algo[id=66 tile=312 stages=35 custom=1 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[256..999]
+target=0   #1  algo[id=66 tile=393 stages=35 custom=3 cluster=7] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=0   #2  algo[id=66 tile=448 stages=35 custom=3 cluster=7] status=0 sync=0  ok      bad=0/16000 unwritten=0 bad_rows=[-1..-1]
+target=0   #3  algo[id=66 tile=12 stages=35 custom=0 cluster=4] status=0 sync=0  CORRUPT bad=11904/16000 unwritten=11904 bad_rows=[128..999]
+target=0   #4  algo[id=66 tile=27 stages=35 custom=0 cluster=4] status=0 sync=0  CORRUPT bad=9856/16000 unwritten=9856 bad_rows=[384..999]

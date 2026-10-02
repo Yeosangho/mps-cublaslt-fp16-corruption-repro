@@ -1,0 +1,72 @@
+VER pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime off XSCAN sm=18 pct=14 cases=1990 bad=1002 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=33 conv1_cl0_fp16=33 conv1_cl1_bf16=88 conv1_cl1_fp16=88 linear_bf16=204 linear_fp16=204 matmul_bf16=173 matmul_fp16=173
+VER pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime guard XSCAN sm=18 pct=14 cases=1990 bad=0 
+VER pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime guard [LTGUARD] pid=1 matmul calls=2716 cluster shape rewritten=1348 (cache hits 680) left unsafe=0
+VER pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime off XSCAN sm=26 pct=20 cases=1990 bad=502 bmm_bf16=4 bmm_fp16=4 conv1_cl0_bf16=30 conv1_cl0_fp16=30 conv1_cl1_bf16=74 conv1_cl1_fp16=74 linear_bf16=74 linear_fp16=74 matmul_bf16=69 matmul_fp16=69
+VER pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime guard XSCAN sm=26 pct=20 cases=1990 bad=0 
+VER pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime guard [LTGUARD] pid=1 matmul calls=2716 cluster shape rewritten=1136 (cache hits 488) left unsafe=0
+VER pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime off XSCAN sm=52 pct=40 cases=1990 bad=970 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=45 conv1_cl0_fp16=45 conv1_cl1_bf16=131 conv1_cl1_fp16=131 linear_bf16=166 linear_fp16=166 matmul_bf16=140 matmul_fp16=140
+VER pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime guard XSCAN sm=52 pct=40 cases=1990 bad=0 
+VER pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime guard [LTGUARD] pid=1 matmul calls=2716 cluster shape rewritten=1490 (cache hits 616) left unsafe=0
+VER pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime off XSCAN sm=78 pct=60 cases=1990 bad=406 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=41 conv1_cl0_fp16=41 conv1_cl1_bf16=94 conv1_cl1_fp16=94 linear_bf16=48 linear_fp16=48 matmul_bf16=17 matmul_fp16=17
+VER pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime guard XSCAN sm=78 pct=60 cases=1990 bad=0 
+VER pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime guard [LTGUARD] pid=1 matmul calls=2716 cluster shape rewritten=1344 (cache hits 618) left unsafe=0
+VER pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime off XSCAN sm=92 pct=70 cases=1990 bad=246 bmm_bf16=1 bmm_fp16=1 conv1_cl0_bf16=7 conv1_cl0_fp16=7 conv1_cl1_bf16=43 conv1_cl1_fp16=43 linear_bf16=44 linear_fp16=44 matmul_bf16=28 matmul_fp16=28
+VER pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime guard XSCAN sm=92 pct=70 cases=1990 bad=0 
+VER pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime guard [LTGUARD] pid=1 matmul calls=2716 cluster shape rewritten=1488 (cache hits 654) left unsafe=0
+VER pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime off XSCAN sm=116 pct=88 cases=1990 bad=258 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=10 conv1_cl0_fp16=10 conv1_cl1_bf16=72 conv1_cl1_fp16=72 linear_bf16=27 linear_fp16=27 matmul_bf16=18 matmul_fp16=18
+VER pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime guard XSCAN sm=116 pct=88 cases=1990 bad=0 
+VER pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime guard [LTGUARD] pid=1 matmul calls=2716 cluster shape rewritten=1490 (cache hits 583) left unsafe=0
+VER pytorch/pytorch:2.14.1-cuda12.6-cudnn9-runtime off XSCAN sm=18 pct=14 cases=1990 bad=758 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=14 conv1_cl0_fp16=14 conv1_cl1_bf16=53 conv1_cl1_fp16=53 linear_bf16=141 linear_fp16=141 matmul_bf16=168 matmul_fp16=168
+VER pytorch/pytorch:2.14.1-cuda12.6-cudnn9-runtime guard XSCAN sm=18 pct=14 cases=1990 bad=0 
+VER pytorch/pytorch:2.14.1-cuda12.6-cudnn9-runtime guard [LTGUARD] pid=1 matmul calls=2700 cluster shape rewritten=1122 (cache hits 568) left unsafe=0
+VER pytorch/pytorch:2.14.1-cuda12.6-cudnn9-runtime off XSCAN sm=26 pct=20 cases=1990 bad=412 bmm_bf16=4 bmm_fp16=4 conv1_cl0_bf16=6 conv1_cl0_fp16=6 conv1_cl1_bf16=44 conv1_cl1_fp16=44 linear_bf16=69 linear_fp16=69 matmul_bf16=83 matmul_fp16=83
+VER pytorch/pytorch:2.14.1-cuda12.6-cudnn9-runtime guard XSCAN sm=26 pct=20 cases=1990 bad=0 
+VER pytorch/pytorch:2.14.1-cuda12.6-cudnn9-runtime guard [LTGUARD] pid=1 matmul calls=2700 cluster shape rewritten=936 (cache hits 560) left unsafe=0
+VER pytorch/pytorch:2.14.1-cuda12.6-cudnn9-runtime off XSCAN sm=52 pct=40 cases=1990 bad=858 bmm_bf16=4 bmm_fp16=4 conv1_cl0_bf16=28 conv1_cl0_fp16=28 conv1_cl1_bf16=119 conv1_cl1_fp16=119 linear_bf16=145 linear_fp16=145 matmul_bf16=133 matmul_fp16=133
+VER pytorch/pytorch:2.14.1-cuda12.6-cudnn9-runtime guard XSCAN sm=52 pct=40 cases=1990 bad=0 
+VER pytorch/pytorch:2.14.1-cuda12.6-cudnn9-runtime guard [LTGUARD] pid=1 matmul calls=2700 cluster shape rewritten=1404 (cache hits 756) left unsafe=0
+VER pytorch/pytorch:2.14.1-cuda12.6-cudnn9-runtime off XSCAN sm=78 pct=60 cases=1990 bad=336 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=18 conv1_cl0_fp16=18 conv1_cl1_bf16=82 conv1_cl1_fp16=82 linear_bf16=48 linear_fp16=48 matmul_bf16=17 matmul_fp16=17
+VER pytorch/pytorch:2.14.1-cuda12.6-cudnn9-runtime guard XSCAN sm=78 pct=60 cases=1990 bad=0 
+VER pytorch/pytorch:2.14.1-cuda12.6-cudnn9-runtime guard [LTGUARD] pid=1 matmul calls=2700 cluster shape rewritten=1282 (cache hits 620) left unsafe=0
+VER pytorch/pytorch:2.14.1-cuda12.6-cudnn9-runtime off XSCAN sm=92 pct=70 cases=1990 bad=244 bmm_bf16=1 bmm_fp16=1 conv1_cl0_bf16=13 conv1_cl0_fp16=13 conv1_cl1_bf16=43 conv1_cl1_fp16=43 linear_bf16=38 linear_fp16=38 matmul_bf16=27 matmul_fp16=27
+VER pytorch/pytorch:2.14.1-cuda12.6-cudnn9-runtime guard XSCAN sm=92 pct=70 cases=1990 bad=0 
+VER pytorch/pytorch:2.14.1-cuda12.6-cudnn9-runtime guard [LTGUARD] pid=1 matmul calls=2700 cluster shape rewritten=1410 (cache hits 778) left unsafe=0
+VER pytorch/pytorch:2.14.1-cuda12.6-cudnn9-runtime off XSCAN sm=116 pct=88 cases=1990 bad=216 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=13 conv1_cl0_fp16=13 conv1_cl1_bf16=36 conv1_cl1_fp16=36 linear_bf16=28 linear_fp16=28 matmul_bf16=29 matmul_fp16=29
+VER pytorch/pytorch:2.14.1-cuda12.6-cudnn9-runtime guard XSCAN sm=116 pct=88 cases=1990 bad=0 
+VER pytorch/pytorch:2.14.1-cuda12.6-cudnn9-runtime guard [LTGUARD] pid=1 matmul calls=2700 cluster shape rewritten=1438 (cache hits 740) left unsafe=0
+VER mc:t2141-cublas13817 off XSCAN sm=18 pct=14 cases=1990 bad=598 conv1_cl1_bf16=7 conv1_cl1_fp16=7 linear_bf16=162 linear_fp16=162 matmul_bf16=130 matmul_fp16=130
+VER mc:t2141-cublas13817 guard XSCAN sm=18 pct=14 cases=1990 bad=0 
+VER mc:t2141-cublas13817 guard [LTGUARD] pid=1 matmul calls=2698 cluster shape rewritten=966 (cache hits 478) left unsafe=0
+VER mc:t2141-cublas13817 off XSCAN sm=26 pct=20 cases=1990 bad=128 conv1_cl1_bf16=9 conv1_cl1_fp16=9 linear_bf16=30 linear_fp16=30 matmul_bf16=25 matmul_fp16=25
+VER mc:t2141-cublas13817 guard XSCAN sm=26 pct=20 cases=1990 bad=0 
+VER mc:t2141-cublas13817 guard [LTGUARD] pid=1 matmul calls=2698 cluster shape rewritten=776 (cache hits 314) left unsafe=0
+VER mc:t2141-cublas13817 off XSCAN sm=52 pct=40 cases=1990 bad=970 bmm_bf16=4 bmm_fp16=4 conv1_cl0_bf16=42 conv1_cl0_fp16=42 conv1_cl1_bf16=135 conv1_cl1_fp16=135 linear_bf16=165 linear_fp16=165 matmul_bf16=139 matmul_fp16=139
+VER mc:t2141-cublas13817 guard XSCAN sm=52 pct=40 cases=1990 bad=0 
+VER mc:t2141-cublas13817 guard [LTGUARD] pid=1 matmul calls=2698 cluster shape rewritten=1488 (cache hits 616) left unsafe=0
+VER mc:t2141-cublas13817 off XSCAN sm=78 pct=60 cases=1990 bad=316 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=23 conv1_cl0_fp16=23 conv1_cl1_bf16=76 conv1_cl1_fp16=76 linear_bf16=44 linear_fp16=44 matmul_bf16=13 matmul_fp16=13
+VER mc:t2141-cublas13817 guard XSCAN sm=78 pct=60 cases=1990 bad=0 
+VER mc:t2141-cublas13817 guard [LTGUARD] pid=1 matmul calls=2698 cluster shape rewritten=1276 (cache hits 552) left unsafe=0
+VER mc:t2141-cublas13817 off XSCAN sm=92 pct=70 cases=1990 bad=248 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=7 conv1_cl0_fp16=7 conv1_cl1_bf16=41 conv1_cl1_fp16=41 linear_bf16=46 linear_fp16=46 matmul_bf16=28 matmul_fp16=28
+VER mc:t2141-cublas13817 guard XSCAN sm=92 pct=70 cases=1990 bad=0 
+VER mc:t2141-cublas13817 guard [LTGUARD] pid=1 matmul calls=2698 cluster shape rewritten=1476 (cache hits 624) left unsafe=0
+VER mc:t2141-cublas13817 off XSCAN sm=116 pct=88 cases=1990 bad=238 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=13 conv1_cl0_fp16=13 conv1_cl1_bf16=55 conv1_cl1_fp16=55 linear_bf16=29 linear_fp16=29 matmul_bf16=20 matmul_fp16=20
+VER mc:t2141-cublas13817 guard XSCAN sm=116 pct=88 cases=1990 bad=0 
+VER mc:t2141-cublas13817 guard [LTGUARD] pid=1 matmul calls=2698 cluster shape rewritten=1422 (cache hits 492) left unsafe=0
+VER pytorch/pytorch:2.14.1-cuda13.0-cudnn9-runtime off XSCAN sm=18 pct=14 cases=1990 bad=598 conv1_cl1_bf16=9 conv1_cl1_fp16=9 linear_bf16=160 linear_fp16=160 matmul_bf16=130 matmul_fp16=130
+VER pytorch/pytorch:2.14.1-cuda13.0-cudnn9-runtime guard XSCAN sm=18 pct=14 cases=1990 bad=0 
+VER pytorch/pytorch:2.14.1-cuda13.0-cudnn9-runtime guard [LTGUARD] pid=1 matmul calls=2698 cluster shape rewritten=948 (cache hits 474) left unsafe=0
+VER pytorch/pytorch:2.14.1-cuda13.0-cudnn9-runtime off XSCAN sm=26 pct=20 cases=1990 bad=138 conv1_cl1_bf16=14 conv1_cl1_fp16=14 linear_bf16=30 linear_fp16=30 matmul_bf16=25 matmul_fp16=25
+VER pytorch/pytorch:2.14.1-cuda13.0-cudnn9-runtime guard XSCAN sm=26 pct=20 cases=1990 bad=0 
+VER pytorch/pytorch:2.14.1-cuda13.0-cudnn9-runtime guard [LTGUARD] pid=1 matmul calls=2698 cluster shape rewritten=774 (cache hits 318) left unsafe=0
+VER pytorch/pytorch:2.14.1-cuda13.0-cudnn9-runtime off XSCAN sm=52 pct=40 cases=1990 bad=964 bmm_bf16=4 bmm_fp16=4 conv1_cl0_bf16=42 conv1_cl0_fp16=42 conv1_cl1_bf16=132 conv1_cl1_fp16=132 linear_bf16=165 linear_fp16=165 matmul_bf16=139 matmul_fp16=139
+VER pytorch/pytorch:2.14.1-cuda13.0-cudnn9-runtime guard XSCAN sm=52 pct=40 cases=1990 bad=0 
+VER pytorch/pytorch:2.14.1-cuda13.0-cudnn9-runtime guard [LTGUARD] pid=1 matmul calls=2698 cluster shape rewritten=1488 (cache hits 606) left unsafe=0
+VER pytorch/pytorch:2.14.1-cuda13.0-cudnn9-runtime off XSCAN sm=78 pct=60 cases=1990 bad=328 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=23 conv1_cl0_fp16=23 conv1_cl1_bf16=80 conv1_cl1_fp16=80 linear_bf16=46 linear_fp16=46 matmul_bf16=13 matmul_fp16=13
+VER pytorch/pytorch:2.14.1-cuda13.0-cudnn9-runtime guard XSCAN sm=78 pct=60 cases=1990 bad=0 
+VER pytorch/pytorch:2.14.1-cuda13.0-cudnn9-runtime guard [LTGUARD] pid=1 matmul calls=2698 cluster shape rewritten=1268 (cache hits 530) left unsafe=0
+VER pytorch/pytorch:2.14.1-cuda13.0-cudnn9-runtime off XSCAN sm=92 pct=70 cases=1990 bad=238 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=7 conv1_cl0_fp16=7 conv1_cl1_bf16=39 conv1_cl1_fp16=39 linear_bf16=44 linear_fp16=44 matmul_bf16=27 matmul_fp16=27
+VER pytorch/pytorch:2.14.1-cuda13.0-cudnn9-runtime guard XSCAN sm=92 pct=70 cases=1990 bad=0 
+VER pytorch/pytorch:2.14.1-cuda13.0-cudnn9-runtime guard [LTGUARD] pid=1 matmul calls=2698 cluster shape rewritten=1482 (cache hits 604) left unsafe=0
+VER pytorch/pytorch:2.14.1-cuda13.0-cudnn9-runtime off XSCAN sm=116 pct=88 cases=1990 bad=232 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=13 conv1_cl0_fp16=13 conv1_cl1_bf16=55 conv1_cl1_fp16=55 linear_bf16=27 linear_fp16=27 matmul_bf16=19 matmul_fp16=19
+VER pytorch/pytorch:2.14.1-cuda13.0-cudnn9-runtime guard XSCAN sm=116 pct=88 cases=1990 bad=0 
+VER pytorch/pytorch:2.14.1-cuda13.0-cudnn9-runtime guard [LTGUARD] pid=1 matmul calls=2698 cluster shape rewritten=1486 (cache hits 490) left unsafe=0

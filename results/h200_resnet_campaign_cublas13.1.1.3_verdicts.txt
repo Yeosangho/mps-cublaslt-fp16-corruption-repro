@@ -1,0 +1,23 @@
+t2141cu130 nomps CLEAN 0/399 sm=132 gemm_rel[32/16/bf]=1.1e-06/2.1e-04/2.4e-03 resnet_rel[32/16/bf]=0.0e+00/0.0e+00/0.0e+00 n_gemm=279 n_resnet=120 n_cmp=0 err=0 rc=0
+04:49:12 t2141cu130 p12 CLEAN 0/399 sm=14 gemm_rel[32/16/bf]=1.1e-06/2.1e-04/2.2e-03 resnet_rel[32/16/bf]=1.2e-04/4.7e-04/3.5e-03 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+04:50:06 t2141cu130 p14 CORRUPT 186/399 sm=18 gemm_rel[32/16/bf]=1.1e-06/1.1e+29/1.2e+37 resnet_rel[32/16/bf]=1.5e-04/2.5e+29/1.0e+37 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+04:51:03 t2141cu130 p10 CLEAN 0/399 sm=12 gemm_rel[32/16/bf]=1.1e-06/2.1e-04/2.2e-03 resnet_rel[32/16/bf]=1.2e-04/4.6e-04/3.5e-03 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+04:51:57 t2141cu130 p16 CORRUPT 432/399 sm=20 gemm_rel[32/16/bf]=1.1e-06/9.1e+28/9.9e+36 resnet_rel[32/16/bf]=1.3e-04/inf/9.7e+36 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+04:52:53 t2141cu130 p11 CLEAN 0/399 sm=14 gemm_rel[32/16/bf]=1.1e-06/2.1e-04/2.2e-03 resnet_rel[32/16/bf]=1.2e-04/4.7e-04/3.5e-03 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+04:53:50 t2141cu130 p13 CLEAN 0/399 sm=16 gemm_rel[32/16/bf]=1.1e-06/2.1e-04/3.0e-03 resnet_rel[32/16/bf]=1.5e-04/4.2e-04/3.3e-03 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+04:54:59 t2141cu130 p15 CORRUPT 186/399 sm=18 gemm_rel[32/16/bf]=1.1e-06/1.1e+29/1.2e+37 resnet_rel[32/16/bf]=1.5e-04/2.5e+29/1.0e+37 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+04:56:07 t2141cu130 p17 CORRUPT 204/399 sm=22 gemm_rel[32/16/bf]=1.1e-06/6.5e+28/7.5e+36 resnet_rel[32/16/bf]=1.3e-04/5.2e+29/6.2e+36 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+04:57:10 t2141cu130 p5 CLEAN 0/399 sm=8 gemm_rel[32/16/bf]=1.1e-06/2.1e-04/1.7e-03 resnet_rel[32/16/bf]=1.3e-04/3.8e-04/3.6e-03 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+04:58:27 t2141cu130 p6 CLEAN 0/399 sm=8 gemm_rel[32/16/bf]=1.1e-06/2.1e-04/1.7e-03 resnet_rel[32/16/bf]=1.3e-04/3.8e-04/3.6e-03 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+05:00:17 t2141cu130 p7 CLEAN 0/399 sm=8 gemm_rel[32/16/bf]=1.1e-06/2.1e-04/1.7e-03 resnet_rel[32/16/bf]=1.3e-04/3.8e-04/3.6e-03 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+05:01:33 t2141cu130 p8 CLEAN 0/399 sm=10 gemm_rel[32/16/bf]=1.1e-06/2.9e-04/2.2e-03 resnet_rel[32/16/bf]=1.3e-04/3.8e-04/3.6e-03 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+05:02:33 t2141cu130 p9 CLEAN 0/399 sm=10 gemm_rel[32/16/bf]=1.1e-06/2.9e-04/2.2e-03 resnet_rel[32/16/bf]=1.3e-04/3.8e-04/3.6e-03 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+05:03:28 t2141cu130 p18 CORRUPT 204/399 sm=22 gemm_rel[32/16/bf]=1.1e-06/6.5e+28/7.5e+36 resnet_rel[32/16/bf]=1.3e-04/5.2e+29/6.2e+36 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+05:04:24 t2141cu130 p19 CORRUPT 281/399 sm=24 gemm_rel[32/16/bf]=1.1e-06/3.1e+28/3.3e+36 resnet_rel[32/16/bf]=1.3e-04/inf/5.0e+33 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+05:05:22 t2141cu130 p20 CORRUPT 44/399 sm=26 gemm_rel[32/16/bf]=1.1e-06/3.6e-01/3.6e-01 resnet_rel[32/16/bf]=1.3e-04/9.0e+01/4.8e+01 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+05:06:14 t2141cu130 p22 CORRUPT 377/399 sm=28 gemm_rel[32/16/bf]=1.1e-06/3.5e+28/1.3e+36 resnet_rel[32/16/bf]=1.3e-04/5.9e+29/5.0e+33 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+05:07:05 t2141cu130 p25 CLEAN 0/399 sm=32 gemm_rel[32/16/bf]=1.1e-06/2.1e-04/2.6e-03 resnet_rel[32/16/bf]=1.3e-04/4.3e-04/3.4e-03 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+05:07:57 t2141cu130 p30 CORRUPT 148/399 sm=38 gemm_rel[32/16/bf]=1.1e-06/2.3e-01/2.3e-01 resnet_rel[32/16/bf]=1.4e-04/5.9e+29/5.9e+29 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+05:08:46 t2141cu130 p50 CLEAN 0/399 sm=66 gemm_rel[32/16/bf]=1.1e-06/2.8e-04/2.6e-03 resnet_rel[32/16/bf]=1.4e-04/4.4e-04/2.9e-03 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+05:09:37 t2141cu130 p100 CLEAN 0/399 sm=132 gemm_rel[32/16/bf]=1.1e-06/2.1e-04/2.4e-03 resnet_rel[32/16/bf]=0.0e+00/0.0e+00/0.0e+00 n_gemm=279 n_resnet=120 n_cmp=240 err=0 rc=0
+CAMPAIGN_DONE t2141cu130

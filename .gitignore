@@ -1,0 +1,12 @@
+# build outputs
+*.so
+lt_test
+lt_np
+cluster_probe
+
+# run-time data (model weights, per-share outputs)
+out/
+hub/
+hf/
+*.npz
+*.tgz

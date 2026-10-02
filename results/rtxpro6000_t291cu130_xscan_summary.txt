@@ -1,0 +1,10 @@
+extended scan, cases per kind (all shares): bmm 0/1400 wrong  conv1_cl0 0/28800 wrong  conv1_cl1 0/28800 wrong  conv3_cl0 0/7200 wrong  conv3_cl1 0/7200 wrong  linear 0/62800 wrong  matmul 0/62800 wrong
+xscan    shares with wrong results:   0  -
+backbone shares with wrong results:   0  -
+scan     shares with wrong results:   0  -
+union    shares with wrong results:   0  -   | SM counts: -
+clean in every harness            : 100  1-100   | SM counts: 8-188
+
+| requested share | SMs | wrong results | largest clean share <= requested | SMs | SMs given up |
+|---|---|---|---|---|---|
+| 1–100 % | 8–188 | no | as requested | 8–188 | 0 |

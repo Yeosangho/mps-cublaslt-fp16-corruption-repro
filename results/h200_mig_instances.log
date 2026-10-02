@@ -1,0 +1,43 @@
+MIG 3g.71gb SM=60 pct=None torch.float32  MxKxN=16x2048x1000 bad=0/16000 bad_cols=- nonfinite=0 zeros=0 max_abs_err=1.12e-06
+MIG 3g.71gb SM=60 pct=None torch.float16  MxKxN=16x2048x1000 bad=0/16000 bad_cols=- nonfinite=0 zeros=0 max_abs_err=0.00103
+MIG 3g.71gb SM=60 pct=None torch.bfloat16 MxKxN=16x2048x1000 bad=0/16000 bad_cols=- nonfinite=0 zeros=0 max_abs_err=0.00874
+MIG 3g.71gb XSCAN sm=60 pct=None cases=1990 bad=0 
+MIG 3g.71gb BACKBONE sm=60 pct=None configs=48  backbone(cuDNN) max_rel=3.40e-03 bad=0   fc(cuBLAS) max_rel=3.21e-03 bad=0
+MIG 3g.71gb guard XSCAN sm=60 pct=None cases=1990 bad=0 
+MIG 3g.71gb guard [LTGUARD] pid=1 matmul calls=2698 cluster shape rewritten=1292 (cache hits 444) left unsafe=0
+MIG 1g.35gb SM=26 pct=None torch.float32  MxKxN=16x2048x1000 bad=0/16000 bad_cols=- nonfinite=0 zeros=0 max_abs_err=1.39e-06
+MIG 1g.35gb SM=26 pct=None torch.float16  MxKxN=16x2048x1000 bad=0/16000 bad_cols=- nonfinite=0 zeros=0 max_abs_err=0.00103
+MIG 1g.35gb SM=26 pct=None torch.bfloat16 MxKxN=16x2048x1000 bad=0/16000 bad_cols=- nonfinite=0 zeros=0 max_abs_err=0.00874
+MIG 1g.35gb XSCAN sm=26 pct=None cases=1990 bad=0 
+MIG 1g.35gb BACKBONE sm=26 pct=None configs=48  backbone(cuDNN) max_rel=2.55e-03 bad=0   fc(cuBLAS) max_rel=2.33e-03 bad=0
+MIG 1g.35gb guard XSCAN sm=26 pct=None cases=1990 bad=0 
+MIG 1g.35gb guard [LTGUARD] pid=1 matmul calls=2698 cluster shape rewritten=762 (cache hits 280) left unsafe=0
+MIG 1g.18gb SM=16 pct=None torch.float32  MxKxN=16x2048x1000 bad=0/16000 bad_cols=- nonfinite=0 zeros=0 max_abs_err=1.39e-06
+MIG 1g.18gb SM=16 pct=None torch.float16  MxKxN=16x2048x1000 bad=0/16000 bad_cols=- nonfinite=0 zeros=0 max_abs_err=0.00103
+MIG 1g.18gb SM=16 pct=None torch.bfloat16 MxKxN=16x2048x1000 bad=0/16000 bad_cols=- nonfinite=0 zeros=0 max_abs_err=0.00874
+MIG 1g.18gb XSCAN sm=16 pct=None cases=1990 bad=0 
+MIG 1g.18gb BACKBONE sm=16 pct=None configs=48  backbone(cuDNN) max_rel=3.36e-03 bad=0   fc(cuBLAS) max_rel=3.26e-03 bad=0
+MIG 1g.18gb guard XSCAN sm=16 pct=None cases=1990 bad=0 
+MIG 1g.18gb guard [LTGUARD] pid=1 matmul calls=2698 cluster shape rewritten=1498 (cache hits 698) left unsafe=0
+MIG 2g.35gb SM=32 pct=None torch.float32  MxKxN=16x2048x1000 bad=0/16000 bad_cols=- nonfinite=0 zeros=0 max_abs_err=1.39e-06
+MIG 2g.35gb SM=32 pct=None torch.float16  MxKxN=16x2048x1000 bad=0/16000 bad_cols=- nonfinite=0 zeros=0 max_abs_err=0.00103
+MIG 2g.35gb SM=32 pct=None torch.bfloat16 MxKxN=16x2048x1000 bad=0/16000 bad_cols=- nonfinite=0 zeros=0 max_abs_err=0.00874
+MIG 2g.35gb XSCAN sm=32 pct=None cases=1990 bad=0 
+MIG 2g.35gb BACKBONE sm=32 pct=None configs=48  backbone(cuDNN) max_rel=3.49e-03 bad=0   fc(cuBLAS) max_rel=3.42e-03 bad=0
+MIG 2g.35gb guard XSCAN sm=32 pct=None cases=1990 bad=0 
+MIG 2g.35gb guard [LTGUARD] pid=1 matmul calls=2698 cluster shape rewritten=1510 (cache hits 718) left unsafe=0
+MIG 4g.71gb SM=64 pct=None torch.float32  MxKxN=16x2048x1000 bad=0/16000 bad_cols=- nonfinite=0 zeros=0 max_abs_err=1.12e-06
+MIG 4g.71gb SM=64 pct=None torch.float16  MxKxN=16x2048x1000 bad=0/16000 bad_cols=- nonfinite=0 zeros=0 max_abs_err=0.00103
+MIG 4g.71gb SM=64 pct=None torch.bfloat16 MxKxN=16x2048x1000 bad=0/16000 bad_cols=- nonfinite=0 zeros=0 max_abs_err=0.00874
+MIG 4g.71gb XSCAN sm=64 pct=None cases=1990 bad=0 
+MIG 4g.71gb BACKBONE sm=64 pct=None configs=48  backbone(cuDNN) max_rel=3.40e-03 bad=0   fc(cuBLAS) max_rel=3.21e-03 bad=0
+MIG 4g.71gb guard XSCAN sm=64 pct=None cases=1990 bad=0 
+MIG 4g.71gb guard [LTGUARD] pid=1 matmul calls=2698 cluster shape rewritten=1510 (cache hits 684) left unsafe=0
+MIG 7g.141gb SM=132 pct=None torch.float32  MxKxN=16x2048x1000 bad=0/16000 bad_cols=- nonfinite=0 zeros=0 max_abs_err=1.28e-06
+MIG 7g.141gb SM=132 pct=None torch.float16  MxKxN=16x2048x1000 bad=0/16000 bad_cols=- nonfinite=0 zeros=0 max_abs_err=0.00103
+MIG 7g.141gb SM=132 pct=None torch.bfloat16 MxKxN=16x2048x1000 bad=0/16000 bad_cols=- nonfinite=0 zeros=0 max_abs_err=0.00874
+MIG 7g.141gb XSCAN sm=132 pct=None cases=1990 bad=0 
+MIG 7g.141gb BACKBONE sm=132 pct=None configs=48  backbone(cuDNN) max_rel=0.00e+00 bad=0   fc(cuBLAS) max_rel=0.00e+00 bad=0
+MIG 7g.141gb guard XSCAN sm=132 pct=None cases=1990 bad=0 
+MIG 7g.141gb guard [LTGUARD] pid=1 matmul calls=2698 cluster shape rewritten=939 (cache hits 524) left unsafe=0
+MIG_TEST_DONE

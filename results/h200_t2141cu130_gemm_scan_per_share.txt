@@ -1,0 +1,260 @@
+gpu=NVIDIA H200 cc=9.0 torch=2.14.1+cu130  shapes per dtype=112
+ pct   SM   fp32   fp16   bf16  corrupted algorithm configs (algoId/tile/stages/customOption/clusterShape)
+   1    8      0      0      0  
+   2    8      0      0      0  
+   3    8      0      0      0  
+   4    8      0      0      0  
+   5    8      0      0      0  
+   6    8      0      0      0  
+   7    8      0      0      0  
+   8   10      0      0      0  
+   9   10      0      0      0  
+  10   12      0      0      0  
+  11   14      0      0      0  
+  12   14      0      0      0  
+  13   16      0      0      0  
+  14   18      0     51     51  id66/128x128/64xAUTO/c3/1x4x1 id66/128x16/64xAUTO/c1/4x1x1 id66/128x64/64xAUTO/c1/4x1x1 id66/128x8/64xAUTO/c1/4x1x1 id66/32x128/64xAUTO/c2/1x4x1 id66/32x64/64xAUTO/c2/1x4x1 id66/64x16/64xAUTO/c1/4x1x1 id66/64x16/64xAUTO/c3/1x4x1 id66/64x64/64xAUTO/c1/4x1x1 id66/64x8/64xAUTO/c1/4x1x1 id66/64x8/64xAUTO/c3/1x4x1
+  15   18      0     51     51  id66/128x128/64xAUTO/c3/1x4x1 id66/128x16/64xAUTO/c1/4x1x1 id66/128x64/64xAUTO/c1/4x1x1 id66/128x8/64xAUTO/c1/4x1x1 id66/32x128/64xAUTO/c2/1x4x1 id66/32x64/64xAUTO/c2/1x4x1 id66/64x16/64xAUTO/c1/4x1x1 id66/64x16/64xAUTO/c3/1x4x1 id66/64x64/64xAUTO/c1/4x1x1 id66/64x8/64xAUTO/c1/4x1x1 id66/64x8/64xAUTO/c3/1x4x1
+  16   20      0     72     72  id66/128x128/64xAUTO/c3/1x4x1 id66/128x16/64xAUTO/c1/4x1x1 id66/128x64/64xAUTO/c1/4x1x1 id66/128x64/64xAUTO/c3/1x4x1 id66/128x8/64xAUTO/c1/4x1x1 id66/224x128/64xAUTO/c6/1x4x1 id66/224x64/64xAUTO/c2/1x4x1 id66/32x128/64xAUTO/c2/1x4x1 id66/32x64/64xAUTO/c2/1x4x1 id66/448x64/64xAUTO/c6/1x4x1 id66/64x128/64xAUTO/c-/4x1x1 id66/64x16/64xAUTO/c1/4x1x1 id66/64x16/64xAUTO/c3/1x4x1 id66/64x32/64xAUTO/c3/1x4x1 id66/64x64/64xAUTO/c1/4x1x1 id66/64x64/64xAUTO/c3/1x4x1 id66/64x8/64xAUTO/c1/4x1x1 id66/96x128/64xAUTO/c2/2x2x1
+  17   22      0     37     37  id66/128x16/64xAUTO/c1/4x1x1 id66/128x8/64xAUTO/c1/4x1x1 id66/32x128/64xAUTO/c2/1x4x1 id66/32x64/64xAUTO/c2/1x4x1 id66/64x16/64xAUTO/c1/4x1x1 id66/64x16/64xAUTO/c3/1x4x1 id66/64x64/64xAUTO/c1/4x1x1 id66/64x8/64xAUTO/c1/4x1x1
+  18   22      0     37     37  id66/128x16/64xAUTO/c1/4x1x1 id66/128x8/64xAUTO/c1/4x1x1 id66/32x128/64xAUTO/c2/1x4x1 id66/32x64/64xAUTO/c2/1x4x1 id66/64x16/64xAUTO/c1/4x1x1 id66/64x16/64xAUTO/c3/1x4x1 id66/64x64/64xAUTO/c1/4x1x1 id66/64x8/64xAUTO/c1/4x1x1
+  19   24      0     23     23  id66/128x96/64xAUTO/c1/4x1x1 id66/128x96/64xAUTO/c3/1x4x1 id66/256x96/64xAUTO/c5/4x1x1 id66/352x64/64xAUTO/c2/1x4x1 id66/96x64/64xAUTO/c-/4x1x1
+  20   26      0      7      7  id66/128x96/64xAUTO/c1/4x1x1 id66/96x64/64xAUTO/c-/4x1x1
+  21   26      0      7      7  id66/128x96/64xAUTO/c1/4x1x1 id66/96x64/64xAUTO/c-/4x1x1
+  22   28      0     39     39  id66/128x80/64xAUTO/c3/1x4x1 id66/128x80/64xAUTO/c3/2x2x1 id66/160x256/64xAUTO/c6/1x4x1 id66/160x64/64xAUTO/c2/1x4x1 id66/320x128/64xAUTO/c7/1x4x1 id66/320x64/64xAUTO/c3/1x4x1 id66/64x40/64xAUTO/c3/1x4x1 id66/64x80/64xAUTO/c3/1x4x1 id66/64x80/64xAUTO/c3/2x2x1
+  23   30      0      0      0  
+  24   30      0      0      0  
+  25   32      0      0      0  
+  26   34      0      0      0  
+  27   34      0      0      0  
+  28   36      0     12     12  id66/128x160/64xAUTO/c1/4x1x1 id66/128x192/64xAUTO/c4/4x1x1 id66/128x80/64xAUTO/c1/4x1x1 id66/96x128/64xAUTO/c2/2x2x1
+  29   38      0      0      0  
+  30   38      0      0      0  
+  31   40      0     10     10  id66/224x128/64xAUTO/c6/1x4x1 id66/448x64/64xAUTO/c6/1x4x1
+  32   42      0      4      4  id66/224x128/64xAUTO/c6/1x4x1
+  33   42      0      4      4  id66/224x128/64xAUTO/c6/1x4x1
+  34   44      0     35     35  id66/128x192/64xAUTO/c4/4x1x1 id66/128x256/64xAUTO/c4/4x1x1 id66/192x128/64xAUTO/c7/1x4x1 id66/192x16/64xAUTO/c3/1x4x1 id66/64x24/64xAUTO/c3/1x4x1 id66/64x32/64xAUTO/c3/1x4x1 id66/64x48/64xAUTO/c3/2x2x1 id66/64x96/64xAUTO/c3/2x2x1 id66/96x128/64xAUTO/c2/2x2x1 id66/96x256/64xAUTO/c6/1x4x1 id66/96x64/64xAUTO/c2/1x4x1
+  35   46      0     35     35  id66/128x192/64xAUTO/c4/4x1x1 id66/128x256/64xAUTO/c4/4x1x1 id66/192x128/64xAUTO/c7/1x4x1 id66/192x16/64xAUTO/c3/1x4x1 id66/64x24/64xAUTO/c3/1x4x1 id66/64x32/64xAUTO/c3/1x4x1 id66/64x48/64xAUTO/c3/2x2x1 id66/64x96/64xAUTO/c3/2x2x1 id66/96x128/64xAUTO/c2/2x2x1 id66/96x256/64xAUTO/c6/1x4x1 id66/96x64/64xAUTO/c2/1x4x1
+  36   46      0     35     35  id66/128x192/64xAUTO/c4/4x1x1 id66/128x256/64xAUTO/c4/4x1x1 id66/192x128/64xAUTO/c7/1x4x1 id66/192x16/64xAUTO/c3/1x4x1 id66/64x24/64xAUTO/c3/1x4x1 id66/64x32/64xAUTO/c3/1x4x1 id66/64x48/64xAUTO/c3/2x2x1 id66/64x96/64xAUTO/c3/2x2x1 id66/96x128/64xAUTO/c2/2x2x1 id66/96x256/64xAUTO/c6/1x4x1 id66/96x64/64xAUTO/c2/1x4x1
+  37   48      0     16     16  id66/128x96/64xAUTO/c1/4x1x1 id66/352x64/64xAUTO/c2/1x4x1 id66/64x24/64xAUTO/c3/1x4x1 id66/64x96/64xAUTO/c1/4x1x1
+  38   50      0     50     50  id66/128x192/64xAUTO/c6/4x2x1 id66/128x256/64xAUTO/c6/4x2x1 id66/128x96/64xAUTO/c1/4x1x1 id66/192x16/64xAUTO/c3/2x4x1 id66/192x8/64xAUTO/c3/2x4x1 id66/352x64/64xAUTO/c2/1x4x1 id66/64x128/64xAUTO/c2/2x4x1 id66/64x16/64xAUTO/c3/2x4x1 id66/64x24/64xAUTO/c3/1x4x1 id66/64x32/64xAUTO/c3/4x2x1 id66/64x48/64xAUTO/c3/2x4x1 id66/64x64/64xAUTO/c3/2x4x1 id66/64x8/64xAUTO/c3/2x4x1 id66/64x8/64xAUTO/c3/4x2x1 id66/64x96/64xAUTO/c1/4x1x1 id66/64x96/64xAUTO/c3/2x4x1 id66/96x128/64xAUTO/c2/4x2x1 id66/96x64/64xAUTO/c2/2x4x1
+  39   50      0     50     50  id66/128x192/64xAUTO/c6/4x2x1 id66/128x256/64xAUTO/c6/4x2x1 id66/128x96/64xAUTO/c1/4x1x1 id66/192x16/64xAUTO/c3/2x4x1 id66/192x8/64xAUTO/c3/2x4x1 id66/352x64/64xAUTO/c2/1x4x1 id66/64x128/64xAUTO/c2/2x4x1 id66/64x16/64xAUTO/c3/2x4x1 id66/64x24/64xAUTO/c3/1x4x1 id66/64x32/64xAUTO/c3/4x2x1 id66/64x48/64xAUTO/c3/2x4x1 id66/64x64/64xAUTO/c3/2x4x1 id66/64x8/64xAUTO/c3/2x4x1 id66/64x8/64xAUTO/c3/4x2x1 id66/64x96/64xAUTO/c1/4x1x1 id66/64x96/64xAUTO/c3/2x4x1 id66/96x128/64xAUTO/c2/4x2x1 id66/96x64/64xAUTO/c2/2x4x1
+  40   52      0     50     50  id66/128x160/64xAUTO/c1/4x1x1 id66/128x80/64xAUTO/c1/4x1x1 id66/160x64/64xAUTO/c2/1x4x1 id66/192x16/64xAUTO/c3/2x4x1 id66/192x8/64xAUTO/c3/2x4x1 id66/64x128/64xAUTO/c2/2x4x1 id66/64x16/64xAUTO/c3/2x4x1 id66/64x24/64xAUTO/c3/1x4x1 id66/64x32/64xAUTO/c3/4x2x1 id66/64x40/64xAUTO/c3/1x4x1 id66/64x40/64xAUTO/c3/2x2x1 id66/64x64/64xAUTO/c3/2x4x1 id66/64x8/64xAUTO/c3/4x2x1 id66/64x80/64xAUTO/c3/2x2x1 id66/64x96/64xAUTO/c1/4x1x1 id66/96x64/64xAUTO/c2/2x4x1
+  41   54      0     47     47  id66/128x160/64xAUTO/c1/4x1x1 id66/128x80/64xAUTO/c1/4x1x1 id66/160x64/64xAUTO/c2/1x4x1 id66/192x16/64xAUTO/c3/2x4x1 id66/192x8/64xAUTO/c3/2x4x1 id66/64x128/64xAUTO/c2/2x4x1 id66/64x16/64xAUTO/c3/2x4x1 id66/64x32/64xAUTO/c3/4x2x1 id66/64x40/64xAUTO/c3/1x4x1 id66/64x40/64xAUTO/c3/2x2x1 id66/64x64/64xAUTO/c3/2x4x1 id66/64x8/64xAUTO/c3/4x2x1 id66/64x80/64xAUTO/c3/2x2x1 id66/64x96/64xAUTO/c1/4x1x1 id66/96x64/64xAUTO/c2/2x4x1
+  42   54      0     47     47  id66/128x160/64xAUTO/c1/4x1x1 id66/128x80/64xAUTO/c1/4x1x1 id66/160x64/64xAUTO/c2/1x4x1 id66/192x16/64xAUTO/c3/2x4x1 id66/192x8/64xAUTO/c3/2x4x1 id66/64x128/64xAUTO/c2/2x4x1 id66/64x16/64xAUTO/c3/2x4x1 id66/64x32/64xAUTO/c3/4x2x1 id66/64x40/64xAUTO/c3/1x4x1 id66/64x40/64xAUTO/c3/2x2x1 id66/64x64/64xAUTO/c3/2x4x1 id66/64x8/64xAUTO/c3/4x2x1 id66/64x80/64xAUTO/c3/2x2x1 id66/64x96/64xAUTO/c1/4x1x1 id66/96x64/64xAUTO/c2/2x4x1
+  43   56      0     34     34  id66/128x40/64xAUTO/c1/4x1x1 id66/160x128/64xAUTO/c2/1x4x1 id66/160x256/64xAUTO/c6/1x4x1 id66/160x64/64xAUTO/c2/2x4x1 id66/192x16/64xAUTO/c3/2x4x1 id66/192x8/64xAUTO/c3/2x4x1 id66/320x128/64xAUTO/c7/1x4x1 id66/64x40/64xAUTO/c3/1x4x1 id66/64x40/64xAUTO/c3/2x4x1 id66/64x80/64xAUTO/c3/2x4x1 id66/96x128/64xAUTO/c2/4x2x1
+  44   58      0     29     29  id66/128x40/64xAUTO/c1/4x1x1 id66/160x128/64xAUTO/c2/1x4x1 id66/160x256/64xAUTO/c6/1x4x1 id66/160x64/64xAUTO/c2/2x4x1 id66/192x16/64xAUTO/c3/2x4x1 id66/192x8/64xAUTO/c3/2x4x1 id66/320x128/64xAUTO/c7/1x4x1 id66/64x40/64xAUTO/c3/2x4x1 id66/64x80/64xAUTO/c3/2x4x1 id66/96x128/64xAUTO/c2/4x2x1
+  45   58      0     29     29  id66/128x40/64xAUTO/c1/4x1x1 id66/160x128/64xAUTO/c2/1x4x1 id66/160x256/64xAUTO/c6/1x4x1 id66/160x64/64xAUTO/c2/2x4x1 id66/192x16/64xAUTO/c3/2x4x1 id66/192x8/64xAUTO/c3/2x4x1 id66/320x128/64xAUTO/c7/1x4x1 id66/64x40/64xAUTO/c3/2x4x1 id66/64x80/64xAUTO/c3/2x4x1 id66/96x128/64xAUTO/c2/4x2x1
+  46   60      0     18     18  id66/128x192/64xAUTO/c4/4x1x1 id66/128x80/64xAUTO/c3/2x2x1 id66/160x64/64xAUTO/c2/2x4x1 id66/64x40/64xAUTO/c3/2x4x1 id66/64x80/64xAUTO/c3/2x4x1 id66/96x128/64xAUTO/c2/1x4x1 id66/96x128/64xAUTO/c2/2x2x1 id66/96x64/64xAUTO/c2/1x4x1
+  47   62      0      0      0  
+  48   62      0      0      0  
+  49   64      0      0      0  
+  50   66      0      0      0  
+  51   66      0      0      0  
+  52   68      0      0      0  
+  53   68      0      0      0  
+  54   70      0      0      0  
+  55   72      0      6      6  id66/128x160/64xAUTO/c1/4x1x1 id66/128x80/64xAUTO/c1/4x1x1 id66/128x80/64xAUTO/c3/4x2x1
+  56   72      0      6      6  id66/128x160/64xAUTO/c1/4x1x1 id66/128x80/64xAUTO/c1/4x1x1 id66/128x80/64xAUTO/c3/4x2x1
+  57   74      0      3      3  id66/128x160/64xAUTO/c1/4x1x1
+  58   76      0      6      6  id66/128x160/64xAUTO/c3/2x2x1 id66/64x128/64xAUTO/c-/4x1x1 id66/64x64/64xAUTO/c3/1x4x1
+  59   76      0      6      6  id66/128x160/64xAUTO/c3/2x2x1 id66/64x128/64xAUTO/c-/4x1x1 id66/64x64/64xAUTO/c3/1x4x1
+  60   78      0      5      5  id66/128x160/64xAUTO/c3/2x2x1 id66/128x80/64xAUTO/c3/2x2x1 id66/64x128/64xAUTO/c-/4x1x1
+  61   80      0     16     16  id66/224x128/64xAUTO/c6/1x4x1 id66/224x64/64xAUTO/c2/1x4x1 id66/448x64/64xAUTO/c6/1x4x1 id66/64x64/64xAUTO/c3/2x4x1
+  62   80      0     16     16  id66/224x128/64xAUTO/c6/1x4x1 id66/224x64/64xAUTO/c2/1x4x1 id66/448x64/64xAUTO/c6/1x4x1 id66/64x64/64xAUTO/c3/2x4x1
+  63   82      0     16     16  id66/224x128/64xAUTO/c6/1x4x1 id66/224x64/64xAUTO/c2/1x4x1 id66/448x64/64xAUTO/c6/1x4x1 id66/64x64/64xAUTO/c3/2x4x1
+  64   84      0     16     16  id66/128x80/64xAUTO/c3/2x2x1 id66/224x128/64xAUTO/c6/1x4x1 id66/224x64/64xAUTO/c2/1x4x1 id66/448x64/64xAUTO/c6/1x4x1
+  65   84      0     16     16  id66/128x80/64xAUTO/c3/2x2x1 id66/224x128/64xAUTO/c6/1x4x1 id66/224x64/64xAUTO/c2/1x4x1 id66/448x64/64xAUTO/c6/1x4x1
+  66   86      0      0      0  
+  67   88      0     31     31  id66/128x192/64xAUTO/c4/4x1x1 id66/128x24/64xAUTO/c1/4x1x1 id66/192x128/64xAUTO/c7/1x4x1 id66/64x24/64xAUTO/c3/1x4x1 id66/64x24/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/2x4x1 id66/96x128/64xAUTO/c2/1x4x1 id66/96x64/64xAUTO/c2/2x4x1
+  68   88      0     31     31  id66/128x192/64xAUTO/c4/4x1x1 id66/128x24/64xAUTO/c1/4x1x1 id66/192x128/64xAUTO/c7/1x4x1 id66/64x24/64xAUTO/c3/1x4x1 id66/64x24/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/2x4x1 id66/96x128/64xAUTO/c2/1x4x1 id66/96x64/64xAUTO/c2/2x4x1
+  69   90      0     10     10  id66/64x24/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/2x4x1 id66/96x64/64xAUTO/c2/2x4x1
+  70   92      0     10     10  id66/64x24/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/2x4x1 id66/96x64/64xAUTO/c2/2x4x1
+  71   92      0     10     10  id66/64x24/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/2x4x1 id66/96x64/64xAUTO/c2/2x4x1
+  72   94      0     10     10  id66/64x24/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/2x4x1 id66/96x64/64xAUTO/c2/2x4x1
+  73   96      0     29     29  id66/128x192/64xAUTO/c6/4x2x1 id66/192x128/64xAUTO/c7/2x4x1 id66/352x64/64xAUTO/c2/1x4x1 id66/64x24/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/4x2x1 id66/64x64/64xAUTO/c3/2x4x1 id66/64x96/64xAUTO/c1/4x1x1 id66/96x128/64xAUTO/c2/4x2x1 id66/96x64/64xAUTO/c2/2x4x1
+  74   96      0     29     29  id66/128x192/64xAUTO/c6/4x2x1 id66/192x128/64xAUTO/c7/2x4x1 id66/352x64/64xAUTO/c2/1x4x1 id66/64x24/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/4x2x1 id66/64x64/64xAUTO/c3/2x4x1 id66/64x96/64xAUTO/c1/4x1x1 id66/96x128/64xAUTO/c2/4x2x1 id66/96x64/64xAUTO/c2/2x4x1
+  75   98      0     29     29  id66/128x192/64xAUTO/c6/4x2x1 id66/192x128/64xAUTO/c7/2x4x1 id66/352x64/64xAUTO/c2/1x4x1 id66/64x24/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/4x2x1 id66/64x64/64xAUTO/c3/2x4x1 id66/64x96/64xAUTO/c1/4x1x1 id66/96x128/64xAUTO/c2/4x2x1 id66/96x64/64xAUTO/c2/2x4x1
+  76  100      0     29     29  id66/128x192/64xAUTO/c6/4x2x1 id66/192x128/64xAUTO/c7/2x4x1 id66/352x64/64xAUTO/c2/1x4x1 id66/64x24/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/4x2x1 id66/64x96/64xAUTO/c1/4x1x1 id66/96x128/64xAUTO/c2/4x2x1 id66/96x64/64xAUTO/c2/2x4x1
+  77  100      0     29     29  id66/128x192/64xAUTO/c6/4x2x1 id66/192x128/64xAUTO/c7/2x4x1 id66/352x64/64xAUTO/c2/1x4x1 id66/64x24/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/4x2x1 id66/64x96/64xAUTO/c1/4x1x1 id66/96x128/64xAUTO/c2/4x2x1 id66/96x64/64xAUTO/c2/2x4x1
+  78  102      0     28     28  id66/128x192/64xAUTO/c6/4x2x1 id66/192x128/64xAUTO/c7/2x4x1 id66/352x64/64xAUTO/c2/1x4x1 id66/64x24/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/4x2x1 id66/64x96/64xAUTO/c1/4x1x1 id66/96x128/64xAUTO/c2/4x2x1 id66/96x64/64xAUTO/c2/2x4x1
+  79  104      0     29     29  id66/128x160/64xAUTO/c1/4x1x1 id66/128x80/64xAUTO/c1/4x1x1 id66/160x128/64xAUTO/c2/1x4x1 id66/64x24/64xAUTO/c3/2x4x1 id66/64x40/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/4x2x1 id66/64x96/64xAUTO/c1/4x1x1 id66/96x64/64xAUTO/c2/2x4x1
+  80  104      0     29     29  id66/128x160/64xAUTO/c1/4x1x1 id66/128x80/64xAUTO/c1/4x1x1 id66/160x128/64xAUTO/c2/1x4x1 id66/64x24/64xAUTO/c3/2x4x1 id66/64x40/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/4x2x1 id66/64x96/64xAUTO/c1/4x1x1 id66/96x64/64xAUTO/c2/2x4x1
+  81  106      0     29     29  id66/128x160/64xAUTO/c1/4x1x1 id66/128x80/64xAUTO/c1/4x1x1 id66/160x128/64xAUTO/c2/1x4x1 id66/64x24/64xAUTO/c3/2x4x1 id66/64x40/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/4x2x1 id66/64x96/64xAUTO/c1/4x1x1 id66/96x64/64xAUTO/c2/2x4x1
+  82  108      0     28     28  id66/128x160/64xAUTO/c1/4x1x1 id66/128x80/64xAUTO/c1/4x1x1 id66/160x128/64xAUTO/c2/1x4x1 id66/64x24/64xAUTO/c3/2x4x1 id66/64x40/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/4x2x1 id66/96x64/64xAUTO/c2/2x4x1
+  83  108      0     28     28  id66/128x160/64xAUTO/c1/4x1x1 id66/128x80/64xAUTO/c1/4x1x1 id66/160x128/64xAUTO/c2/1x4x1 id66/64x24/64xAUTO/c3/2x4x1 id66/64x40/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/4x2x1 id66/96x64/64xAUTO/c2/2x4x1
+  84  110      0     28     28  id66/128x160/64xAUTO/c1/4x1x1 id66/128x80/64xAUTO/c1/4x1x1 id66/160x128/64xAUTO/c2/1x4x1 id66/64x24/64xAUTO/c3/2x4x1 id66/64x40/64xAUTO/c3/2x4x1 id66/64x48/64xAUTO/c3/4x2x1 id66/96x64/64xAUTO/c2/2x4x1
+  85  112      0     23     23  id66/128x160/64xAUTO/c1/4x1x1 id66/128x40/64xAUTO/c1/4x1x1 id66/160x128/64xAUTO/c2/1x4x1 id66/320x128/64xAUTO/c7/1x4x1 id66/64x40/64xAUTO/c1/4x1x1 id66/64x40/64xAUTO/c3/2x4x1
+  86  112      0     23     23  id66/128x160/64xAUTO/c1/4x1x1 id66/128x40/64xAUTO/c1/4x1x1 id66/160x128/64xAUTO/c2/1x4x1 id66/320x128/64xAUTO/c7/1x4x1 id66/64x40/64xAUTO/c1/4x1x1 id66/64x40/64xAUTO/c3/2x4x1
+  87  114      0      8      8  id66/128x160/64xAUTO/c1/4x1x1 id66/128x160/64xAUTO/c3/4x2x1 id66/320x128/64xAUTO/c7/1x4x1
+  88  116      0      6      6  id66/128x160/64xAUTO/c3/4x2x1 id66/128x80/64xAUTO/c3/4x2x1
+  89  116      0      6      6  id66/128x160/64xAUTO/c3/4x2x1 id66/128x80/64xAUTO/c3/4x2x1
+  90  118      0      0      0  
+  91  120      0      0      0  
+  92  120      0      0      0  
+  93  122      0      0      0  
+  94  124      0      0      0  
+  95  124      0      0      0  
+  96  126      0      0      0  
+  97  128      0      0      0  
+  98  128      0      0      0  
+  99  130      0      0      0  
+ 100  132      0      0      0  
+
+SM counts with corruption: [18, 20, 22, 24, 26, 28, 36, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 72, 74, 76, 78, 80, 82, 84, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116]
+SM counts clean          : [8, 10, 12, 14, 16, 30, 32, 34, 38, 62, 64, 66, 68, 70, 86, 118, 120, 122, 124, 126, 128, 130, 132]
+
+per algorithm config (fp16+bf16):  config  ->  SM counts where it was used: ok / CORRUPT
+  id66/128x160/64xAUTO/c1/4x1x1                ok@SM=[116, 118, 120, 124, 126]  CORRUPT@SM=[36, 52, 54, 72, 74, 104, 106, 108, 110, 112, 114]
+  id66/96x64/64xAUTO/c2/2x4x1                  ok@SM=[48, 114]  CORRUPT@SM=[50, 52, 54, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110]
+  id66/64x24/64xAUTO/c3/2x4x1                  ok@SM=[24, 26, 28, 30, 112, 116, 118, 120, 122, 124, 126, 132]  CORRUPT@SM=[88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110]
+  id66/128x192/64xAUTO/c6/4x2x1                ok@SM=[24, 48]  CORRUPT@SM=[50, 96, 98, 100, 102]
+  id66/128x80/64xAUTO/c1/4x1x1                 ok@SM=[112]  CORRUPT@SM=[36, 52, 54, 72, 104, 106, 108, 110]
+  id66/352x64/64xAUTO/c2/1x4x1                 ok@SM=[12]  CORRUPT@SM=[24, 48, 50, 96, 98, 100, 102]
+  id66/160x128/64xAUTO/c2/1x4x1                ok@SM=[60, 62, 116, 118, 120]  CORRUPT@SM=[56, 58, 104, 106, 108, 110, 112]
+  id66/64x48/64xAUTO/c3/2x4x1                  ok@SM=[48, 132]  CORRUPT@SM=[50, 88, 90, 92, 94, 96, 98, 100, 102]
+  id66/224x128/64xAUTO/c6/1x4x1                ok@SM=[86]  CORRUPT@SM=[20, 40, 42, 80, 82, 84]
+  id66/128x8/64xAUTO/c1/4x1x1                  ok@SM=[8, 10, 12, 14, 16, 24, 26, 28, 30]  CORRUPT@SM=[18, 20, 22]
+  id66/64x8/64xAUTO/c1/4x1x1                   ok@SM=[16, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132]  CORRUPT@SM=[18, 20, 22]
+  id66/320x128/64xAUTO/c7/1x4x1                ok@SM=[60, 62, 116, 118, 120]  CORRUPT@SM=[28, 56, 58, 112, 114]
+  id66/448x64/64xAUTO/c6/1x4x1                 ok@SM=[]  CORRUPT@SM=[20, 40, 80, 82, 84]
+  id66/64x40/64xAUTO/c3/2x4x1                  ok@SM=[62, 116, 118, 120, 122, 124, 126]  CORRUPT@SM=[56, 58, 60, 104, 106, 108, 110, 112]
+  id66/64x48/64xAUTO/c3/4x2x1                  ok@SM=[132]  CORRUPT@SM=[96, 98, 100, 102, 104, 106, 108, 110]
+  id66/128x192/64xAUTO/c4/4x1x1                ok@SM=[90, 92, 94]  CORRUPT@SM=[36, 44, 46, 60, 88]
+  id66/64x96/64xAUTO/c1/4x1x1                  ok@SM=[108, 110]  CORRUPT@SM=[48, 50, 52, 54, 96, 98, 100, 102, 104, 106]
+  id66/96x128/64xAUTO/c2/4x2x1                 ok@SM=[48, 60, 62, 114]  CORRUPT@SM=[50, 56, 58, 96, 98, 100, 102]
+  id66/64x24/64xAUTO/c3/1x4x1                  ok@SM=[12, 14, 54, 56, 58, 60, 62, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 116, 118, 120, 122, 124, 126, 132]  CORRUPT@SM=[44, 46, 48, 50, 52, 88]
+  id66/224x64/64xAUTO/c2/1x4x1                 ok@SM=[86]  CORRUPT@SM=[20, 80, 82, 84]
+  id66/64x16/64xAUTO/c3/2x4x1                  ok@SM=[8, 10, 12, 14, 32, 34, 36, 38, 40, 42, 44, 46, 48, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126]  CORRUPT@SM=[50, 52, 54]
+  id66/32x128/64xAUTO/c2/1x4x1                 ok@SM=[8, 10, 12, 16, 24]  CORRUPT@SM=[18, 20, 22]
+  id66/64x16/64xAUTO/c1/4x1x1                  ok@SM=[16, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 78, 114, 132]  CORRUPT@SM=[18, 20, 22]
+  id66/64x64/64xAUTO/c1/4x1x1                  ok@SM=[16, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 78, 132]  CORRUPT@SM=[18, 20, 22]
+  id66/64x16/64xAUTO/c3/1x4x1                  ok@SM=[16, 24, 26, 28, 30, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126]  CORRUPT@SM=[18, 20, 22]
+  id66/32x64/64xAUTO/c2/1x4x1                  ok@SM=[16, 24, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 78, 114, 132]  CORRUPT@SM=[18, 20, 22]
+  id66/64x8/64xAUTO/c3/4x2x1                   ok@SM=[32, 34, 36, 38, 40, 42, 44, 46, 48, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132]  CORRUPT@SM=[50, 52, 54]
+  id66/192x128/64xAUTO/c7/1x4x1                ok@SM=[90, 92, 94]  CORRUPT@SM=[44, 46, 88]
+  id66/128x40/64xAUTO/c1/4x1x1                 ok@SM=[60, 62, 116, 118, 120, 122, 124, 126]  CORRUPT@SM=[56, 58, 112]
+  id66/96x128/64xAUTO/c2/2x2x1                 ok@SM=[]  CORRUPT@SM=[20, 36, 44, 46, 60]
+  id66/160x256/64xAUTO/c6/1x4x1                ok@SM=[60, 62]  CORRUPT@SM=[28, 56, 58]
+  id66/128x96/64xAUTO/c1/4x1x1                 ok@SM=[]  CORRUPT@SM=[24, 26, 48, 50]
+  id66/160x64/64xAUTO/c2/1x4x1                 ok@SM=[30]  CORRUPT@SM=[28, 52, 54]
+  id66/128x128/64xAUTO/c3/1x4x1                ok@SM=[8, 10, 12, 16]  CORRUPT@SM=[18, 20]
+  id66/64x32/64xAUTO/c3/4x2x1                  ok@SM=[32, 34, 36, 38, 40, 42, 44, 46, 48, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 132]  CORRUPT@SM=[50, 52, 54]
+  id66/128x16/64xAUTO/c1/4x1x1                 ok@SM=[8, 10, 12, 14, 16, 24, 26, 28, 30]  CORRUPT@SM=[18, 20, 22]
+  id66/96x64/64xAUTO/c2/1x4x1                  ok@SM=[62]  CORRUPT@SM=[44, 46, 60]
+  id66/128x64/64xAUTO/c1/4x1x1                 ok@SM=[8, 10, 16]  CORRUPT@SM=[18, 20]
+  id66/96x64/64xAUTO/c-/4x1x1                  ok@SM=[12, 14, 28, 30]  CORRUPT@SM=[24, 26]
+  id66/128x256/64xAUTO/c4/4x1x1                ok@SM=[12]  CORRUPT@SM=[44, 46]
+  id66/64x40/64xAUTO/c3/1x4x1                  ok@SM=[30, 58, 60, 62]  CORRUPT@SM=[28, 52, 54, 56]
+  id66/64x80/64xAUTO/c3/2x2x1                  ok@SM=[30]  CORRUPT@SM=[28, 52, 54]
+  id66/96x256/64xAUTO/c6/1x4x1                 ok@SM=[]  CORRUPT@SM=[44, 46]
+  id66/160x64/64xAUTO/c2/2x4x1                 ok@SM=[62]  CORRUPT@SM=[56, 58, 60]
+  id66/64x80/64xAUTO/c3/2x4x1                  ok@SM=[62]  CORRUPT@SM=[56, 58, 60]
+  id66/192x128/64xAUTO/c7/2x4x1                ok@SM=[]  CORRUPT@SM=[96, 98, 100, 102]
+  id66/64x64/64xAUTO/c3/2x4x1                  ok@SM=[8, 10, 12, 14, 32, 34, 36, 38, 40, 42, 44, 46, 48, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 84, 86, 88, 90, 92, 94, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 132]  CORRUPT@SM=[50, 52, 54, 80, 82, 96, 98]  (mixed ok/bad within SM: [80, 82, 96, 98])
+  id66/128x80/64xAUTO/c3/2x2x1                 ok@SM=[]  CORRUPT@SM=[28, 60, 78, 84]
+  id66/96x128/64xAUTO/c2/1x4x1                 ok@SM=[90, 92, 94]  CORRUPT@SM=[60, 88]
+  id66/128x80/64xAUTO/c3/4x2x1                 ok@SM=[118, 120, 122, 124, 126]  CORRUPT@SM=[72, 116]
+  id66/64x48/64xAUTO/c3/2x2x1                  ok@SM=[12]  CORRUPT@SM=[44, 46]
+  id66/64x96/64xAUTO/c3/2x2x1                  ok@SM=[]  CORRUPT@SM=[44, 46]
+  id66/64x40/64xAUTO/c3/2x2x1                  ok@SM=[]  CORRUPT@SM=[52, 54]
+  id66/128x160/64xAUTO/c3/2x2x1                ok@SM=[]  CORRUPT@SM=[76, 78]
+  id66/192x16/64xAUTO/c3/2x4x1                 ok@SM=[24, 26, 28, 30, 48, 60, 62]  CORRUPT@SM=[50, 52, 54, 56, 58]
+  id66/192x8/64xAUTO/c3/2x4x1                  ok@SM=[48, 60]  CORRUPT@SM=[50, 52, 54, 56, 58]
+  id66/64x40/64xAUTO/c1/4x1x1                  ok@SM=[116, 118, 120, 122, 124, 126]  CORRUPT@SM=[112]
+  id66/128x160/64xAUTO/c3/4x2x1                ok@SM=[118, 120, 122, 124, 126]  CORRUPT@SM=[114, 116]
+  id66/64x8/64xAUTO/c3/1x4x1                   ok@SM=[8, 10, 12, 14, 16, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132]  CORRUPT@SM=[18]
+  id66/128x256/64xAUTO/c6/4x2x1                ok@SM=[8, 16, 32, 34, 36, 38, 48, 64, 66, 68, 70, 72, 74, 76, 78, 114]  CORRUPT@SM=[50]
+  id66/64x8/64xAUTO/c3/2x4x1                   ok@SM=[16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132]  CORRUPT@SM=[50]
+  id66/64x96/64xAUTO/c3/2x4x1                  ok@SM=[24, 48]  CORRUPT@SM=[50]
+  id66/64x64/64xAUTO/c3/1x4x1                  ok@SM=[12, 116]  CORRUPT@SM=[20, 76]
+  id66/64x128/64xAUTO/c-/4x1x1                 ok@SM=[12]  CORRUPT@SM=[20, 76, 78]
+  id66/64x128/64xAUTO/c2/2x4x1                 ok@SM=[16, 18, 20, 28, 30, 32, 34, 36, 38, 40, 42, 56, 58, 60, 62]  CORRUPT@SM=[50, 52, 54]
+  id66/64x32/64xAUTO/c3/1x4x1                  ok@SM=[8, 10, 12, 14, 32, 34, 36, 38, 40, 42, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132]  CORRUPT@SM=[20, 44, 46]  (mixed ok/bad within SM: [44, 46])
+  id66/128x96/64xAUTO/c3/1x4x1                 ok@SM=[12]  CORRUPT@SM=[24]
+  id66/320x64/64xAUTO/c3/1x4x1                 ok@SM=[]  CORRUPT@SM=[28]
+  id66/64x80/64xAUTO/c3/1x4x1                  ok@SM=[30]  CORRUPT@SM=[28]
+  id66/128x80/64xAUTO/c3/1x4x1                 ok@SM=[30]  CORRUPT@SM=[28]
+  id66/128x24/64xAUTO/c1/4x1x1                 ok@SM=[90, 92, 94]  CORRUPT@SM=[88]
+  id66/256x96/64xAUTO/c5/4x1x1                 ok@SM=[12]  CORRUPT@SM=[24]
+  id66/192x16/64xAUTO/c3/1x4x1                 ok@SM=[]  CORRUPT@SM=[44, 46]
+  id66/128x64/64xAUTO/c3/1x4x1                 ok@SM=[]  CORRUPT@SM=[20]
+  id66/64x8/64xAUTO/c3/1x1x1                   ok@SM=[8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132]  CORRUPT@SM=[]
+  id66/64x8/64xAUTO/c1/2x1x1                   ok@SM=[8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132]  CORRUPT@SM=[]
+  id66/256x8/64xAUTO/c1/4x1x1                  ok@SM=[8, 10]  CORRUPT@SM=[]
+  id66/32x64/64xAUTO/c-/4x1x1                  ok@SM=[8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132]  CORRUPT@SM=[]
+  id66/64x8/64xAUTO/c3/1x2x1                   ok@SM=[8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132]  CORRUPT@SM=[]
+  id66/64x8/64xAUTO/c3/2x2x1                   ok@SM=[8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132]  CORRUPT@SM=[]
+  id66/256x16/64xAUTO/c1/4x1x1                 ok@SM=[8, 10]  CORRUPT@SM=[]
+  id66/256x64/64xAUTO/c1/4x1x1                 ok@SM=[8, 10]  CORRUPT@SM=[]
+  id66/256x128/64xAUTO/c7/4x2x1                ok@SM=[8, 16, 18]  CORRUPT@SM=[]
+  id66/32x256/64xAUTO/c2/1x4x1                 ok@SM=[8, 10]  CORRUPT@SM=[]
+  id66/128x256/64xAUTO/c6/1x4x1                ok@SM=[8, 10]  CORRUPT@SM=[]
+  id66/224x64/64xAUTO/c-/2x1x1                 ok@SM=[10]  CORRUPT@SM=[]
+  id66/224x128/64xAUTO/c6/1x2x1                ok@SM=[10]  CORRUPT@SM=[]
+  id66/64x64/64xAUTO/c1/2x1x1                  ok@SM=[10, 18, 38, 50, 58, 74, 86, 128, 130, 132]  CORRUPT@SM=[]
+  id66/448x64/64xAUTO/c6/1x2x1                 ok@SM=[10]  CORRUPT@SM=[]
+  id66/64x32/64xAUTO/c3/1x2x1                  ok@SM=[10, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132]  CORRUPT@SM=[]
+  id66/128x64/64xAUTO/c3/1x2x1                 ok@SM=[10, 38, 86, 128, 130]  CORRUPT@SM=[]
+  id66/128x128/64xAUTO/c1/2x1x1                ok@SM=[10, 26, 38, 86, 128, 130, 132]  CORRUPT@SM=[]
+  id66/128x256/64xAUTO/c4/2x1x1                ok@SM=[10, 22, 26, 128, 130]  CORRUPT@SM=[]
+  id66/192x8/64xAUTO/c1/4x1x1                  ok@SM=[12, 14]  CORRUPT@SM=[]
+  id66/192x8/64xAUTO/c3/2x2x1                  ok@SM=[12, 14]  CORRUPT@SM=[]
+  id66/192x16/64xAUTO/c1/4x1x1                 ok@SM=[12, 14]  CORRUPT@SM=[]
+  id66/64x16/64xAUTO/c3/1x1x1                  ok@SM=[12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132]  CORRUPT@SM=[]
+  id66/192x32/64xAUTO/c3/2x2x1                 ok@SM=[12, 14]  CORRUPT@SM=[]
+  id66/384x32/64xAUTO/c3/2x2x1                 ok@SM=[12]  CORRUPT@SM=[]
+  id66/192x64/64xAUTO/c1/4x1x1                 ok@SM=[12]  CORRUPT@SM=[]
+  id66/192x128/64xAUTO/c5/4x1x1                ok@SM=[12]  CORRUPT@SM=[]
+  id66/64x192/64xAUTO/c2/2x2x1                 ok@SM=[12]  CORRUPT@SM=[]
+  id66/32x192/64xAUTO/c2/1x4x1                 ok@SM=[12, 14]  CORRUPT@SM=[]
+  id66/64x384/64xAUTO/c7/2x2x1                 ok@SM=[12]  CORRUPT@SM=[]
+  id66/128x192/64xAUTO/c6/1x4x1                ok@SM=[12]  CORRUPT@SM=[]
+  id66/160x64/64xAUTO/c-/2x1x1                 ok@SM=[14]  CORRUPT@SM=[]
+  id66/64x40/64xAUTO/c1/2x1x1                  ok@SM=[14]  CORRUPT@SM=[]
+  id66/160x128/64xAUTO/c2/1x2x1                ok@SM=[14, 26, 38]  CORRUPT@SM=[]
+  id66/320x128/64xAUTO/c7/1x2x1                ok@SM=[14]  CORRUPT@SM=[]
+  id66/64x80/64xAUTO/c3/1x2x1                  ok@SM=[14, 26]  CORRUPT@SM=[]
+  id66/128x80/64xAUTO/c3/1x2x1                 ok@SM=[14, 26, 30, 38, 42, 70, 78]  CORRUPT@SM=[]
+  id66/160x256/64xAUTO/c6/1x2x1                ok@SM=[14]  CORRUPT@SM=[]
+  id66/128x80/64xAUTO/c1/2x1x1                 ok@SM=[14, 26, 30, 42, 70]  CORRUPT@SM=[]
+  id66/128x160/64xAUTO/c3/1x2x1                ok@SM=[14]  CORRUPT@SM=[]
+  id66/128x160/64xAUTO/c1/2x1x1                ok@SM=[14, 26, 30, 38, 42, 70, 114]  CORRUPT@SM=[]
+  id66/64x32/64xAUTO/c3/2x4x1                  ok@SM=[16, 18, 20, 22, 24, 26, 28, 30, 48, 64, 66, 68, 70, 72, 74, 76, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132]  CORRUPT@SM=[]
+  id66/128x128/64xAUTO/c3/4x2x1                ok@SM=[16, 18, 32, 34, 36, 38, 40, 42]  CORRUPT@SM=[]
+  id66/96x64/64xAUTO/c2/1x2x1                  ok@SM=[18, 30, 102, 118, 120]  CORRUPT@SM=[]
+  id66/96x128/64xAUTO/c2/1x2x1                 ok@SM=[18, 22, 30]  CORRUPT@SM=[]
+  id66/192x128/64xAUTO/c7/1x2x1                ok@SM=[18, 22, 30, 114]  CORRUPT@SM=[]
+  id66/128x192/64xAUTO/c4/2x1x1                ok@SM=[18, 22, 30, 114]  CORRUPT@SM=[]
+  id66/192x8/64xAUTO/c3/1x2x1                  ok@SM=[22]  CORRUPT@SM=[]
+  id66/96x64/64xAUTO/c-/2x1x1                  ok@SM=[22]  CORRUPT@SM=[]
+  id66/64x24/64xAUTO/c1/2x1x1                  ok@SM=[22, 86]  CORRUPT@SM=[]
+  id66/64x96/64xAUTO/c1/2x1x1                  ok@SM=[22]  CORRUPT@SM=[]
+  id66/96x256/64xAUTO/c6/1x2x1                 ok@SM=[22]  CORRUPT@SM=[]
+  id66/64x192/64xAUTO/c-/2x1x1                 ok@SM=[22]  CORRUPT@SM=[]
+  id66/192x8/64xAUTO/c3/4x2x1                  ok@SM=[24, 26, 28, 30]  CORRUPT@SM=[]
+  id66/192x128/64xAUTO/c7/4x2x1                ok@SM=[24]  CORRUPT@SM=[]
+  id66/32x192/64xAUTO/c2/4x2x1                 ok@SM=[24]  CORRUPT@SM=[]
+  id66/64x128/64xAUTO/c2/4x2x1                 ok@SM=[24, 32, 34, 36, 38, 40, 42, 48, 64, 66, 68, 70, 72, 74, 76, 78, 80, 114]  CORRUPT@SM=[]
+  id66/128x128/64xAUTO/c3/2x4x1                ok@SM=[24, 64, 66, 68, 70, 72, 74, 76, 78, 114]  CORRUPT@SM=[]
+  id66/64x40/64xAUTO/c3/1x2x1                  ok@SM=[26]  CORRUPT@SM=[]
+  id66/64x80/64xAUTO/c1/2x1x1                  ok@SM=[26]  CORRUPT@SM=[]
+  id66/64x32/64xAUTO/c3/2x2x1                  ok@SM=[28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132]  CORRUPT@SM=[]
+  id66/128x64/64xAUTO/c3/2x4x1                 ok@SM=[32, 34, 36, 38, 40, 42, 64, 66, 68, 70, 72, 74, 76, 80, 82, 84, 86, 114]  CORRUPT@SM=[]
+  id66/64x128/64xAUTO/c-/2x1x1                 ok@SM=[38, 58, 74, 86, 132]  CORRUPT@SM=[]
+  id66/224x64/64xAUTO/c2/2x4x1                 ok@SM=[40, 42]  CORRUPT@SM=[]
+  id66/96x128/64xAUTO/c2/2x4x1                 ok@SM=[40]  CORRUPT@SM=[]
+  id66/192x96/64xAUTO/c3/1x1x1                 ok@SM=[62, 122, 124, 126]  CORRUPT@SM=[]
+  id66/96x192/64xAUTO/c2/1x1x1                 ok@SM=[62, 122, 124, 126]  CORRUPT@SM=[]
+  id66/192x192/64xAUTO/c6/1x1x1                ok@SM=[62, 122, 124, 126]  CORRUPT@SM=[]
+  id66/64x16/64xAUTO/c1/2x1x1                  ok@SM=[78, 114, 132]  CORRUPT@SM=[]
+  id66/32x64/64xAUTO/c2/4x2x1                  ok@SM=[78, 114]  CORRUPT@SM=[]
+  id66/160x192/64xAUTO/c6/1x1x1                ok@SM=[78]  CORRUPT@SM=[]
+  id66/64x24/64xAUTO/c3/1x2x1                  ok@SM=[86]  CORRUPT@SM=[]
+  id66/64x48/64xAUTO/c1/2x1x1                  ok@SM=[86]  CORRUPT@SM=[]
+  id66/96x128/64xAUTO/c-/2x1x1                 ok@SM=[114, 118, 120]  CORRUPT@SM=[]
+  id66/64x16/64xAUTO/c3/1x2x1                  ok@SM=[128, 130, 132]  CORRUPT@SM=[]
+  id66/32x64/64xAUTO/c-/2x1x1                  ok@SM=[128, 130, 132]  CORRUPT@SM=[]
+  id66/64x64/64xAUTO/c3/1x2x1                  ok@SM=[132]  CORRUPT@SM=[]
+  id66/128x128/64xAUTO/c3/1x2x1                ok@SM=[132]  CORRUPT@SM=[]
+  id66/256x128/64xAUTO/c7/1x2x1                ok@SM=[132]  CORRUPT@SM=[]

@@ -1,0 +1,202 @@
+XSCAN_BASE_DONE
+XSCAN_GUARD_DONE
+base XSCAN sm=8 pct=1 cases=1990 bad=0 
+base XSCAN sm=12 pct=10 cases=1990 bad=0 
+base XSCAN sm=132 pct=100 cases=1990 bad=0 
+base XSCAN sm=14 pct=11 cases=1990 bad=0 
+base XSCAN sm=14 pct=12 cases=1990 bad=0 
+base XSCAN sm=16 pct=13 cases=1990 bad=0 
+base XSCAN sm=18 pct=14 cases=1990 bad=598 conv1_cl1_bf16=9 conv1_cl1_fp16=9 linear_bf16=160 linear_fp16=160 matmul_bf16=130 matmul_fp16=130
+base XSCAN sm=18 pct=15 cases=1990 bad=598 conv1_cl1_bf16=9 conv1_cl1_fp16=9 linear_bf16=160 linear_fp16=160 matmul_bf16=130 matmul_fp16=130
+base XSCAN sm=20 pct=16 cases=1990 bad=1110 bmm_bf16=4 bmm_fp16=4 conv1_cl0_bf16=42 conv1_cl0_fp16=42 conv1_cl1_bf16=132 conv1_cl1_fp16=132 linear_bf16=202 linear_fp16=202 matmul_bf16=175 matmul_fp16=175
+base XSCAN sm=22 pct=17 cases=1990 bad=404 conv1_cl0_bf16=11 conv1_cl0_fp16=11 conv1_cl1_bf16=26 conv1_cl1_fp16=26 linear_bf16=80 linear_fp16=80 matmul_bf16=85 matmul_fp16=85
+base XSCAN sm=22 pct=18 cases=1990 bad=404 conv1_cl0_bf16=11 conv1_cl0_fp16=11 conv1_cl1_bf16=26 conv1_cl1_fp16=26 linear_bf16=80 linear_fp16=80 matmul_bf16=85 matmul_fp16=85
+base XSCAN sm=24 pct=19 cases=1990 bad=462 bmm_bf16=1 bmm_fp16=1 conv1_cl0_bf16=25 conv1_cl0_fp16=25 conv1_cl1_bf16=57 conv1_cl1_fp16=57 linear_bf16=78 linear_fp16=78 matmul_bf16=70 matmul_fp16=70
+base XSCAN sm=8 pct=2 cases=1990 bad=0 
+base XSCAN sm=26 pct=20 cases=1990 bad=138 conv1_cl1_bf16=14 conv1_cl1_fp16=14 linear_bf16=30 linear_fp16=30 matmul_bf16=25 matmul_fp16=25
+base XSCAN sm=26 pct=21 cases=1990 bad=138 conv1_cl1_bf16=14 conv1_cl1_fp16=14 linear_bf16=30 linear_fp16=30 matmul_bf16=25 matmul_fp16=25
+base XSCAN sm=28 pct=22 cases=1990 bad=786 bmm_bf16=4 bmm_fp16=4 conv1_cl0_bf16=46 conv1_cl0_fp16=46 conv1_cl1_bf16=138 conv1_cl1_fp16=138 linear_bf16=110 linear_fp16=110 matmul_bf16=95 matmul_fp16=95
+base XSCAN sm=30 pct=23 cases=1990 bad=0 
+base XSCAN sm=30 pct=24 cases=1990 bad=0 
+base XSCAN sm=32 pct=25 cases=1990 bad=0 
+base XSCAN sm=34 pct=26 cases=1990 bad=0 
+base XSCAN sm=34 pct=27 cases=1990 bad=0 
+base XSCAN sm=36 pct=28 cases=1990 bad=472 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=39 conv1_cl0_fp16=39 conv1_cl1_bf16=120 conv1_cl1_fp16=120 linear_bf16=45 linear_fp16=45 matmul_bf16=29 matmul_fp16=29
+base XSCAN sm=38 pct=29 cases=1990 bad=204 conv1_cl0_bf16=14 conv1_cl0_fp16=14 conv1_cl1_bf16=57 conv1_cl1_fp16=57 linear_bf16=23 linear_fp16=23 matmul_bf16=8 matmul_fp16=8
+base XSCAN sm=8 pct=3 cases=1990 bad=0 
+base XSCAN sm=38 pct=30 cases=1990 bad=204 conv1_cl0_bf16=14 conv1_cl0_fp16=14 conv1_cl1_bf16=57 conv1_cl1_fp16=57 linear_bf16=23 linear_fp16=23 matmul_bf16=8 matmul_fp16=8
+base XSCAN sm=40 pct=31 cases=1990 bad=284 conv1_cl0_bf16=16 conv1_cl0_fp16=16 conv1_cl1_bf16=53 conv1_cl1_fp16=53 linear_bf16=47 linear_fp16=47 matmul_bf16=26 matmul_fp16=26
+base XSCAN sm=42 pct=32 cases=1990 bad=190 conv1_cl0_bf16=12 conv1_cl0_fp16=12 conv1_cl1_bf16=38 conv1_cl1_fp16=38 linear_bf16=30 linear_fp16=30 matmul_bf16=15 matmul_fp16=15
+base XSCAN sm=42 pct=33 cases=1990 bad=190 conv1_cl0_bf16=12 conv1_cl0_fp16=12 conv1_cl1_bf16=38 conv1_cl1_fp16=38 linear_bf16=30 linear_fp16=30 matmul_bf16=15 matmul_fp16=15
+base XSCAN sm=44 pct=34 cases=1990 bad=740 bmm_bf16=4 bmm_fp16=4 conv1_cl0_bf16=35 conv1_cl0_fp16=35 conv1_cl1_bf16=112 conv1_cl1_fp16=112 linear_bf16=125 linear_fp16=125 matmul_bf16=94 matmul_fp16=94
+base XSCAN sm=46 pct=35 cases=1990 bad=588 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=9 conv1_cl0_fp16=9 conv1_cl1_bf16=73 conv1_cl1_fp16=73 linear_bf16=120 linear_fp16=120 matmul_bf16=89 matmul_fp16=89
+base XSCAN sm=46 pct=36 cases=1990 bad=588 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=9 conv1_cl0_fp16=9 conv1_cl1_bf16=73 conv1_cl1_fp16=73 linear_bf16=120 linear_fp16=120 matmul_bf16=89 matmul_fp16=89
+base XSCAN sm=48 pct=37 cases=1990 bad=312 bmm_bf16=1 bmm_fp16=1 conv1_cl0_bf16=20 conv1_cl0_fp16=20 conv1_cl1_bf16=45 conv1_cl1_fp16=45 linear_bf16=48 linear_fp16=48 matmul_bf16=42 matmul_fp16=42
+base XSCAN sm=50 pct=38 cases=1990 bad=660 bmm_bf16=4 bmm_fp16=4 conv1_cl0_bf16=8 conv1_cl0_fp16=8 conv1_cl1_bf16=29 conv1_cl1_fp16=29 linear_bf16=150 linear_fp16=150 matmul_bf16=139 matmul_fp16=139
+base XSCAN sm=50 pct=39 cases=1990 bad=660 bmm_bf16=4 bmm_fp16=4 conv1_cl0_bf16=8 conv1_cl0_fp16=8 conv1_cl1_bf16=29 conv1_cl1_fp16=29 linear_bf16=150 linear_fp16=150 matmul_bf16=139 matmul_fp16=139
+base XSCAN sm=8 pct=4 cases=1990 bad=0 
+base XSCAN sm=52 pct=40 cases=1990 bad=964 bmm_bf16=4 bmm_fp16=4 conv1_cl0_bf16=42 conv1_cl0_fp16=42 conv1_cl1_bf16=132 conv1_cl1_fp16=132 linear_bf16=165 linear_fp16=165 matmul_bf16=139 matmul_fp16=139
+base XSCAN sm=54 pct=41 cases=1990 bad=718 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=19 conv1_cl0_fp16=19 conv1_cl1_bf16=77 conv1_cl1_fp16=77 linear_bf16=136 linear_fp16=136 matmul_bf16=124 matmul_fp16=124
+base XSCAN sm=54 pct=42 cases=1990 bad=718 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=19 conv1_cl0_fp16=19 conv1_cl1_bf16=77 conv1_cl1_fp16=77 linear_bf16=136 linear_fp16=136 matmul_bf16=124 matmul_fp16=124
+base XSCAN sm=56 pct=43 cases=1990 bad=760 bmm_bf16=4 bmm_fp16=4 conv1_cl0_bf16=46 conv1_cl0_fp16=46 conv1_cl1_bf16=131 conv1_cl1_fp16=131 linear_bf16=103 linear_fp16=103 matmul_bf16=96 matmul_fp16=96
+base XSCAN sm=58 pct=44 cases=1990 bad=566 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=27 conv1_cl0_fp16=27 conv1_cl1_bf16=97 conv1_cl1_fp16=97 linear_bf16=73 linear_fp16=73 matmul_bf16=84 matmul_fp16=84
+base XSCAN sm=58 pct=45 cases=1990 bad=566 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=27 conv1_cl0_fp16=27 conv1_cl1_bf16=97 conv1_cl1_fp16=97 linear_bf16=73 linear_fp16=73 matmul_bf16=84 matmul_fp16=84
+base XSCAN sm=60 pct=46 cases=1990 bad=516 bmm_bf16=4 bmm_fp16=4 conv1_cl0_bf16=37 conv1_cl0_fp16=37 conv1_cl1_bf16=97 conv1_cl1_fp16=97 linear_bf16=70 linear_fp16=70 matmul_bf16=50 matmul_fp16=50
+base XSCAN sm=62 pct=47 cases=1990 bad=0 
+base XSCAN sm=62 pct=48 cases=1990 bad=0 
+base XSCAN sm=64 pct=49 cases=1990 bad=0 
+base XSCAN sm=8 pct=5 cases=1990 bad=0 
+base XSCAN sm=66 pct=50 cases=1990 bad=0 
+base XSCAN sm=66 pct=51 cases=1990 bad=0 
+base XSCAN sm=68 pct=52 cases=1990 bad=268 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=25 conv1_cl0_fp16=25 conv1_cl1_bf16=106 conv1_cl1_fp16=106 linear_bf16=1 linear_fp16=1
+base XSCAN sm=68 pct=53 cases=1990 bad=268 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=25 conv1_cl0_fp16=25 conv1_cl1_bf16=106 conv1_cl1_fp16=106 linear_bf16=1 linear_fp16=1
+base XSCAN sm=70 pct=54 cases=1990 bad=188 bmm_bf16=1 bmm_fp16=1 conv1_cl0_bf16=13 conv1_cl0_fp16=13 conv1_cl1_bf16=79 conv1_cl1_fp16=79 linear_bf16=1 linear_fp16=1
+base XSCAN sm=72 pct=55 cases=1990 bad=414 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=37 conv1_cl0_fp16=37 conv1_cl1_bf16=115 conv1_cl1_fp16=115 linear_bf16=34 linear_fp16=34 matmul_bf16=18 matmul_fp16=18
+base XSCAN sm=72 pct=56 cases=1990 bad=414 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=37 conv1_cl0_fp16=37 conv1_cl1_bf16=115 conv1_cl1_fp16=115 linear_bf16=34 linear_fp16=34 matmul_bf16=18 matmul_fp16=18
+base XSCAN sm=74 pct=57 cases=1990 bad=316 conv1_cl0_bf16=26 conv1_cl0_fp16=26 conv1_cl1_bf16=89 conv1_cl1_fp16=89 linear_bf16=30 linear_fp16=30 matmul_bf16=13 matmul_fp16=13
+base XSCAN sm=76 pct=58 cases=1990 bad=416 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=33 conv1_cl0_fp16=33 conv1_cl1_bf16=98 conv1_cl1_fp16=98 linear_bf16=54 linear_fp16=54 matmul_bf16=20 matmul_fp16=20
+base XSCAN sm=76 pct=59 cases=1990 bad=416 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=33 conv1_cl0_fp16=33 conv1_cl1_bf16=98 conv1_cl1_fp16=98 linear_bf16=54 linear_fp16=54 matmul_bf16=20 matmul_fp16=20
+base XSCAN sm=8 pct=6 cases=1990 bad=0 
+base XSCAN sm=78 pct=60 cases=1990 bad=328 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=23 conv1_cl0_fp16=23 conv1_cl1_bf16=80 conv1_cl1_fp16=80 linear_bf16=46 linear_fp16=46 matmul_bf16=13 matmul_fp16=13
+base XSCAN sm=80 pct=61 cases=1990 bad=502 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=35 conv1_cl0_fp16=35 conv1_cl1_bf16=115 conv1_cl1_fp16=115 linear_bf16=66 linear_fp16=66 matmul_bf16=32 matmul_fp16=32
+base XSCAN sm=80 pct=62 cases=1990 bad=502 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=35 conv1_cl0_fp16=35 conv1_cl1_bf16=115 conv1_cl1_fp16=115 linear_bf16=66 linear_fp16=66 matmul_bf16=32 matmul_fp16=32
+base XSCAN sm=82 pct=63 cases=1990 bad=464 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=32 conv1_cl0_fp16=32 conv1_cl1_bf16=104 conv1_cl1_fp16=104 linear_bf16=64 linear_fp16=64 matmul_bf16=30 matmul_fp16=30
+base XSCAN sm=84 pct=64 cases=1990 bad=510 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=37 conv1_cl0_fp16=37 conv1_cl1_bf16=115 conv1_cl1_fp16=115 linear_bf16=68 linear_fp16=68 matmul_bf16=33 matmul_fp16=33
+base XSCAN sm=84 pct=65 cases=1990 bad=510 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=37 conv1_cl0_fp16=37 conv1_cl1_bf16=115 conv1_cl1_fp16=115 linear_bf16=68 linear_fp16=68 matmul_bf16=33 matmul_fp16=33
+base XSCAN sm=86 pct=66 cases=1990 bad=310 conv1_cl0_bf16=27 conv1_cl0_fp16=27 conv1_cl1_bf16=92 conv1_cl1_fp16=92 linear_bf16=27 linear_fp16=27 matmul_bf16=9 matmul_fp16=9
+base XSCAN sm=88 pct=67 cases=1990 bad=592 bmm_bf16=4 bmm_fp16=4 conv1_cl0_bf16=27 conv1_cl0_fp16=27 conv1_cl1_bf16=96 conv1_cl1_fp16=96 linear_bf16=95 linear_fp16=95 matmul_bf16=74 matmul_fp16=74
+base XSCAN sm=88 pct=68 cases=1990 bad=592 bmm_bf16=4 bmm_fp16=4 conv1_cl0_bf16=27 conv1_cl0_fp16=27 conv1_cl1_bf16=96 conv1_cl1_fp16=96 linear_bf16=95 linear_fp16=95 matmul_bf16=74 matmul_fp16=74
+base XSCAN sm=90 pct=69 cases=1990 bad=264 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=11 conv1_cl0_fp16=11 conv1_cl1_bf16=46 conv1_cl1_fp16=46 linear_bf16=46 linear_fp16=46 matmul_bf16=27 matmul_fp16=27
+base XSCAN sm=8 pct=7 cases=1990 bad=0 
+base XSCAN sm=92 pct=70 cases=1990 bad=238 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=7 conv1_cl0_fp16=7 conv1_cl1_bf16=39 conv1_cl1_fp16=39 linear_bf16=44 linear_fp16=44 matmul_bf16=27 matmul_fp16=27
+base XSCAN sm=92 pct=71 cases=1990 bad=238 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=7 conv1_cl0_fp16=7 conv1_cl1_bf16=39 conv1_cl1_fp16=39 linear_bf16=44 linear_fp16=44 matmul_bf16=27 matmul_fp16=27
+base XSCAN sm=94 pct=72 cases=1990 bad=222 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=7 conv1_cl0_fp16=7 conv1_cl1_bf16=39 conv1_cl1_fp16=39 linear_bf16=39 linear_fp16=39 matmul_bf16=24 matmul_fp16=24
+base XSCAN sm=96 pct=73 cases=1990 bad=594 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=42 conv1_cl0_fp16=42 conv1_cl1_bf16=96 conv1_cl1_fp16=96 linear_bf16=79 linear_fp16=79 matmul_bf16=77 matmul_fp16=77
+base XSCAN sm=96 pct=74 cases=1990 bad=594 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=42 conv1_cl0_fp16=42 conv1_cl1_bf16=96 conv1_cl1_fp16=96 linear_bf16=79 linear_fp16=79 matmul_bf16=77 matmul_fp16=77
+base XSCAN sm=98 pct=75 cases=1990 bad=432 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=24 conv1_cl0_fp16=24 conv1_cl1_bf16=38 conv1_cl1_fp16=38 linear_bf16=76 linear_fp16=76 matmul_bf16=75 matmul_fp16=75
+base XSCAN sm=100 pct=76 cases=1990 bad=658 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=40 conv1_cl0_fp16=40 conv1_cl1_bf16=125 conv1_cl1_fp16=125 linear_bf16=82 linear_fp16=82 matmul_bf16=79 matmul_fp16=79
+base XSCAN sm=100 pct=77 cases=1990 bad=658 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=40 conv1_cl0_fp16=40 conv1_cl1_bf16=125 conv1_cl1_fp16=125 linear_bf16=82 linear_fp16=82 matmul_bf16=79 matmul_fp16=79
+base XSCAN sm=102 pct=78 cases=1990 bad=622 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=37 conv1_cl0_fp16=37 conv1_cl1_bf16=122 conv1_cl1_fp16=122 linear_bf16=77 linear_fp16=77 matmul_bf16=73 matmul_fp16=73
+base XSCAN sm=104 pct=79 cases=1990 bad=662 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=40 conv1_cl0_fp16=40 conv1_cl1_bf16=125 conv1_cl1_fp16=125 linear_bf16=84 linear_fp16=84 matmul_bf16=79 matmul_fp16=79
+base XSCAN sm=10 pct=8 cases=1990 bad=0 
+base XSCAN sm=104 pct=80 cases=1990 bad=662 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=40 conv1_cl0_fp16=40 conv1_cl1_bf16=125 conv1_cl1_fp16=125 linear_bf16=84 linear_fp16=84 matmul_bf16=79 matmul_fp16=79
+base XSCAN sm=106 pct=81 cases=1990 bad=584 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=36 conv1_cl0_fp16=36 conv1_cl1_bf16=91 conv1_cl1_fp16=91 linear_bf16=84 linear_fp16=84 matmul_bf16=79 matmul_fp16=79
+base XSCAN sm=108 pct=82 cases=1990 bad=654 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=42 conv1_cl0_fp16=42 conv1_cl1_bf16=121 conv1_cl1_fp16=121 linear_bf16=84 linear_fp16=84 matmul_bf16=77 matmul_fp16=77
+base XSCAN sm=108 pct=83 cases=1990 bad=654 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=42 conv1_cl0_fp16=42 conv1_cl1_bf16=121 conv1_cl1_fp16=121 linear_bf16=84 linear_fp16=84 matmul_bf16=77 matmul_fp16=77
+base XSCAN sm=110 pct=84 cases=1990 bad=604 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=38 conv1_cl0_fp16=38 conv1_cl1_bf16=102 conv1_cl1_fp16=102 linear_bf16=83 linear_fp16=83 matmul_bf16=77 matmul_fp16=77
+base XSCAN sm=112 pct=85 cases=1990 bad=554 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=34 conv1_cl0_fp16=34 conv1_cl1_bf16=111 conv1_cl1_fp16=111 linear_bf16=69 linear_fp16=69 matmul_bf16=60 matmul_fp16=60
+base XSCAN sm=112 pct=86 cases=1990 bad=554 bmm_bf16=3 bmm_fp16=3 conv1_cl0_bf16=34 conv1_cl0_fp16=34 conv1_cl1_bf16=111 conv1_cl1_fp16=111 linear_bf16=69 linear_fp16=69 matmul_bf16=60 matmul_fp16=60
+base XSCAN sm=114 pct=87 cases=1990 bad=143 conv1_cl0_bf16=16 conv1_cl0_fp16=18 conv1_cl1_bf16=32 conv1_cl1_fp16=35 linear_bf16=6 linear_fp16=6 matmul_bf16=17 matmul_fp16=13
+base XSCAN sm=116 pct=88 cases=1990 bad=232 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=13 conv1_cl0_fp16=13 conv1_cl1_bf16=55 conv1_cl1_fp16=55 linear_bf16=27 linear_fp16=27 matmul_bf16=19 matmul_fp16=19
+base XSCAN sm=116 pct=89 cases=1990 bad=232 bmm_bf16=2 bmm_fp16=2 conv1_cl0_bf16=13 conv1_cl0_fp16=13 conv1_cl1_bf16=55 conv1_cl1_fp16=55 linear_bf16=27 linear_fp16=27 matmul_bf16=19 matmul_fp16=19
+base XSCAN sm=10 pct=9 cases=1990 bad=0 
+base XSCAN sm=118 pct=90 cases=1990 bad=0 
+base XSCAN sm=120 pct=91 cases=1990 bad=0 
+base XSCAN sm=120 pct=92 cases=1990 bad=0 
+base XSCAN sm=122 pct=93 cases=1990 bad=0 
+base XSCAN sm=124 pct=94 cases=1990 bad=0 
+base XSCAN sm=124 pct=95 cases=1990 bad=0 
+base XSCAN sm=126 pct=96 cases=1990 bad=0 
+base XSCAN sm=128 pct=97 cases=1990 bad=0 
+base XSCAN sm=128 pct=98 cases=1990 bad=0 
+base XSCAN sm=130 pct=99 cases=1990 bad=0 
+guard XSCAN sm=8 pct=1 cases=1990 bad=0 
+guard XSCAN sm=12 pct=10 cases=1990 bad=0 
+guard XSCAN sm=132 pct=100 cases=1990 bad=0 
+guard XSCAN sm=14 pct=11 cases=1990 bad=0 
+guard XSCAN sm=14 pct=12 cases=1990 bad=0 
+guard XSCAN sm=16 pct=13 cases=1990 bad=0 
+guard XSCAN sm=18 pct=14 cases=1990 bad=0 
+guard XSCAN sm=18 pct=15 cases=1990 bad=0 
+guard XSCAN sm=20 pct=16 cases=1990 bad=0 
+guard XSCAN sm=22 pct=17 cases=1990 bad=0 
+guard XSCAN sm=22 pct=18 cases=1990 bad=0 
+guard XSCAN sm=24 pct=19 cases=1990 bad=0 
+guard XSCAN sm=8 pct=2 cases=1990 bad=0 
+guard XSCAN sm=26 pct=20 cases=1990 bad=0 
+guard XSCAN sm=26 pct=21 cases=1990 bad=0 
+guard XSCAN sm=28 pct=22 cases=1990 bad=0 
+guard XSCAN sm=30 pct=23 cases=1990 bad=0 
+guard XSCAN sm=30 pct=24 cases=1990 bad=0 
+guard XSCAN sm=32 pct=25 cases=1990 bad=0 
+guard XSCAN sm=34 pct=26 cases=1990 bad=0 
+guard XSCAN sm=34 pct=27 cases=1990 bad=0 
+guard XSCAN sm=36 pct=28 cases=1990 bad=0 
+guard XSCAN sm=38 pct=29 cases=1990 bad=0 
+guard XSCAN sm=8 pct=3 cases=1990 bad=0 
+guard XSCAN sm=38 pct=30 cases=1990 bad=0 
+guard XSCAN sm=40 pct=31 cases=1990 bad=0 
+guard XSCAN sm=42 pct=32 cases=1990 bad=0 
+guard XSCAN sm=42 pct=33 cases=1990 bad=0 
+guard XSCAN sm=44 pct=34 cases=1990 bad=0 
+guard XSCAN sm=46 pct=35 cases=1990 bad=0 
+guard XSCAN sm=46 pct=36 cases=1990 bad=0 
+guard XSCAN sm=48 pct=37 cases=1990 bad=0 
+guard XSCAN sm=50 pct=38 cases=1990 bad=0 
+guard XSCAN sm=50 pct=39 cases=1990 bad=0 
+guard XSCAN sm=8 pct=4 cases=1990 bad=0 
+guard XSCAN sm=52 pct=40 cases=1990 bad=0 
+guard XSCAN sm=54 pct=41 cases=1990 bad=0 
+guard XSCAN sm=54 pct=42 cases=1990 bad=0 
+guard XSCAN sm=56 pct=43 cases=1990 bad=0 
+guard XSCAN sm=58 pct=44 cases=1990 bad=0 
+guard XSCAN sm=58 pct=45 cases=1990 bad=0 
+guard XSCAN sm=60 pct=46 cases=1990 bad=0 
+guard XSCAN sm=62 pct=47 cases=1990 bad=0 
+guard XSCAN sm=62 pct=48 cases=1990 bad=0 
+guard XSCAN sm=64 pct=49 cases=1990 bad=0 
+guard XSCAN sm=8 pct=5 cases=1990 bad=0 
+guard XSCAN sm=66 pct=50 cases=1990 bad=0 
+guard XSCAN sm=66 pct=51 cases=1990 bad=0 
+guard XSCAN sm=68 pct=52 cases=1990 bad=0 
+guard XSCAN sm=68 pct=53 cases=1990 bad=0 
+guard XSCAN sm=70 pct=54 cases=1990 bad=0 
+guard XSCAN sm=72 pct=55 cases=1990 bad=0 
+guard XSCAN sm=72 pct=56 cases=1990 bad=0 
+guard XSCAN sm=74 pct=57 cases=1990 bad=0 
+guard XSCAN sm=76 pct=58 cases=1990 bad=0 
+guard XSCAN sm=76 pct=59 cases=1990 bad=0 
+guard XSCAN sm=8 pct=6 cases=1990 bad=0 
+guard XSCAN sm=78 pct=60 cases=1990 bad=0 
+guard XSCAN sm=80 pct=61 cases=1990 bad=0 
+guard XSCAN sm=80 pct=62 cases=1990 bad=0 
+guard XSCAN sm=82 pct=63 cases=1990 bad=0 
+guard XSCAN sm=84 pct=64 cases=1990 bad=0 
+guard XSCAN sm=84 pct=65 cases=1990 bad=0 
+guard XSCAN sm=86 pct=66 cases=1990 bad=0 
+guard XSCAN sm=88 pct=67 cases=1990 bad=0 
+guard XSCAN sm=88 pct=68 cases=1990 bad=0 
+guard XSCAN sm=90 pct=69 cases=1990 bad=0 
+guard XSCAN sm=8 pct=7 cases=1990 bad=0 
+guard XSCAN sm=92 pct=70 cases=1990 bad=0 
+guard XSCAN sm=92 pct=71 cases=1990 bad=0 
+guard XSCAN sm=94 pct=72 cases=1990 bad=0 
+guard XSCAN sm=96 pct=73 cases=1990 bad=0 
+guard XSCAN sm=96 pct=74 cases=1990 bad=0 
+guard XSCAN sm=98 pct=75 cases=1990 bad=0 
+guard XSCAN sm=100 pct=76 cases=1990 bad=0 
+guard XSCAN sm=100 pct=77 cases=1990 bad=0 
+guard XSCAN sm=102 pct=78 cases=1990 bad=0 
+guard XSCAN sm=104 pct=79 cases=1990 bad=0 
+guard XSCAN sm=10 pct=8 cases=1990 bad=0 
+guard XSCAN sm=104 pct=80 cases=1990 bad=0 
+guard XSCAN sm=106 pct=81 cases=1990 bad=0 
+guard XSCAN sm=108 pct=82 cases=1990 bad=0 
+guard XSCAN sm=108 pct=83 cases=1990 bad=0 
+guard XSCAN sm=110 pct=84 cases=1990 bad=0 
+guard XSCAN sm=112 pct=85 cases=1990 bad=0 
+guard XSCAN sm=112 pct=86 cases=1990 bad=0 
+guard XSCAN sm=114 pct=87 cases=1990 bad=0 
+guard XSCAN sm=116 pct=88 cases=1990 bad=0 
+guard XSCAN sm=116 pct=89 cases=1990 bad=0 
+guard XSCAN sm=10 pct=9 cases=1990 bad=0 
+guard XSCAN sm=118 pct=90 cases=1990 bad=0 
+guard XSCAN sm=120 pct=91 cases=1990 bad=0 
+guard XSCAN sm=120 pct=92 cases=1990 bad=0 
+guard XSCAN sm=122 pct=93 cases=1990 bad=0 
+guard XSCAN sm=124 pct=94 cases=1990 bad=0 
+guard XSCAN sm=124 pct=95 cases=1990 bad=0 
+guard XSCAN sm=126 pct=96 cases=1990 bad=0 
+guard XSCAN sm=128 pct=97 cases=1990 bad=0 
+guard XSCAN sm=128 pct=98 cases=1990 bad=0 
+guard XSCAN sm=130 pct=99 cases=1990 bad=0 
