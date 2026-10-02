@@ -11,7 +11,15 @@
 // option) with the cluster shape replaced by 2x1x1 / 1x2x1 / 1x1x1, after cublasLtMatmulAlgoCheck accepted the
 // replacement.  Everything else passes through unchanged.
 //
+// Scope: needed only on Hopper (compute capability 9.x) when the process runs under an MPS
+// CUDA_MPS_ACTIVE_THREAD_PERCENTAGE share.  Blackwell (B200, RTX PRO 6000), MIG instances and 100 % / no MPS
+// gave correct results without it.  The guard therefore checks the compute capability of the device of the
+// current CUDA context (cuCtxGetDevice + cuDeviceGetAttribute, read-only; cuBLASLt is always called with a
+// context in place) the first time it meets a large cluster shape, and rewrites only on compute capability
+// LTGUARD_CC (default 9).  If the capability cannot be determined the guard stays active.
+//
 // Env:  LTGUARD_DISABLE=1   pass everything through
+//       LTGUARD_CC=<major>  compute-capability major version to guard (default 9 = Hopper); 0 = every GPU
 //       LTGUARD_LOG=1       print a summary at exit (2 = also every rewrite)
 //       LTGUARD_MAXCTA=<n>  largest cluster (in CTAs) left alone, default 2
 //       LTGUARD_NOCACHE=1   validate every call with cublasLtMatmulAlgoCheck instead of caching the decision
@@ -23,6 +31,7 @@
 #include <string.h>
 #include <stdint.h>
 #include <unistd.h>
+#include <cuda.h>
 #include <cublasLt.h>
 
 typedef cublasStatus_t (*matmul_t)(cublasLtHandle_t, cublasLtMatmulDesc_t, const void *, const void *, cublasLtMatrixLayout_t,
@@ -51,8 +60,9 @@ static void *g_lt;                 // handle of the already loaded libcublasLt
 static cfgget_t r_get;
 static cfgset_t r_set;
 static check_t r_check;
-static int g_disable, g_log, g_maxcta = 2, g_nocache;
-static unsigned long g_calls, g_rewritten, g_kept_unsafe;
+static int g_disable, g_log, g_maxcta = 2, g_nocache, g_ccmode = 9;
+static unsigned long g_calls, g_rewritten, g_kept_unsafe, g_arch_skipped, g_arch_unknown;
+static int g_last_cc = -1;         // compute-capability major of the last device looked at (for the report)
 
 static int find_lt(struct dl_phdr_info *info, size_t size, void *data) {
     (void)size;
@@ -69,6 +79,7 @@ static void init_once(void) {
     if ((e = getenv("LTGUARD_LOG"))) g_log = ltg_atoi(e);
     if ((e = getenv("LTGUARD_MAXCTA")) && ltg_atoi(e) > 0) g_maxcta = ltg_atoi(e);
     if ((e = getenv("LTGUARD_NOCACHE")) && ltg_atoi(e)) g_nocache = 1;
+    if ((e = getenv("LTGUARD_CC")) && *e) g_ccmode = ltg_atoi(e);
     char path[4096] = "";
     dl_iterate_phdr(find_lt, path);                      // the copy the process already loaded (may be RTLD_LOCAL)
     if (path[0]) g_lt = dlopen(path, RTLD_NOW | RTLD_NOLOAD);
@@ -81,6 +92,32 @@ static void init_once(void) {
         if (g_log) fprintf(stderr, "[LTGUARD] libcublasLt not resolved (%s) - passing through\n", path);
         g_disable = 1;
     }
+}
+
+// Is the device of the current context one the guard is meant for?  Read-only driver queries; the answer is
+// cached per device ordinal.  Unknown (driver not resolved, no current context) counts as "yes".
+static int arch_needs_guard(void) {
+    typedef CUresult (*ctxdev_t)(CUdevice *);
+    typedef CUresult (*devattr_t)(int *, CUdevice_attribute, CUdevice);
+    static ctxdev_t ctxdev; static devattr_t devattr; static int resolved;
+    static signed char cc[64];                                    // 0 = not queried yet
+    if (g_ccmode == 0) return 1;
+    if (!resolved) {
+        void *h = dlopen("libcuda.so.1", RTLD_NOW | RTLD_NOLOAD);
+        if (h) { ctxdev = (ctxdev_t)rdlsym(h, "cuCtxGetDevice"); devattr = (devattr_t)rdlsym(h, "cuDeviceGetAttribute"); }
+        resolved = 1;
+    }
+    CUdevice dev = -1; int major = 0;
+    if (!ctxdev || !devattr || ctxdev(&dev) != CUDA_SUCCESS || dev < 0) { __sync_add_and_fetch(&g_arch_unknown, 1); return 1; }
+    if (dev < 64 && cc[dev]) major = cc[dev];
+    else {
+        if (devattr(&major, CU_DEVICE_ATTRIBUTE_COMPUTE_CAPABILITY_MAJOR, dev) != CUDA_SUCCESS || major <= 0) {
+            __sync_add_and_fetch(&g_arch_unknown, 1); return 1;
+        }
+        if (dev < 64) cc[dev] = (signed char)major;
+    }
+    g_last_cc = major;
+    return major == g_ccmode;
 }
 
 // CTAs per cluster for a cublasLtClusterShape_t value; 0 = AUTO / unknown (left alone)
@@ -130,6 +167,7 @@ static const cublasLtMatmulAlgo_t *guard(cublasLtHandle_t h, cublasLtMatmulDesc_
     if (r_get(algo, CUBLASLT_ALGO_CONFIG_CLUSTER_SHAPE_ID, &cs, sizeof cs, &w) != CUBLAS_STATUS_SUCCESS) return algo;
     int xdom, n = cta_of(cs, &xdom);
     if (n <= g_maxcta) return algo;                               // AUTO, 1x1x1, 2x1x1, 1x2x1
+    if (!arch_needs_guard()) { if (from_cache) __sync_add_and_fetch(&g_arch_skipped, 1); return algo; }
     uint16_t crep;
     if (from_cache && !g_nocache && cache_get(algo, &crep)) {
         *tmp = *algo;
@@ -223,6 +261,8 @@ unsigned long ltguard_rewritten(void) { return g_rewritten; }
 unsigned long ltguard_left_unsafe(void) { return g_kept_unsafe; }
 
 __attribute__((destructor)) static void report(void) {
-    if (g_log) fprintf(stderr, "[LTGUARD] pid=%d matmul calls=%lu cluster shape rewritten=%lu (cache hits %lu) left unsafe=%lu%s\n", getpid(), g_calls,
-                       g_rewritten, g_cache_hits, g_kept_unsafe, g_disable ? " (disabled)" : "");
+    if (g_log) fprintf(stderr, "[LTGUARD] pid=%d matmul calls=%lu cluster shape rewritten=%lu (cache hits %lu) left unsafe=%lu"
+                       " | device CC major=%d guarded CC=%d skipped (other architecture)=%lu CC unknown=%lu%s\n", getpid(), g_calls,
+                       g_rewritten, g_cache_hits, g_kept_unsafe, g_last_cc, g_ccmode, g_arch_skipped, g_arch_unknown,
+                       g_disable ? " (disabled)" : "");
 }

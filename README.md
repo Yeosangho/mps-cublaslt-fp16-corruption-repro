@@ -461,12 +461,20 @@ docker run ... -v $PWD:/w -e LD_PRELOAD=/w/ltguard.so -e LTGUARD_LOG=1 ...
 | Hopper, FP32 | no | not needed |
 | Blackwell: B200 (CC 10.0), RTX PRO 6000 (CC 12.0) | no | **no** |
 
-- On Blackwell there is nothing to guard against, and the guard has **not been run there at all**: every B200 and
-  RTX PRO 6000 result in this repository is unguarded. Enabling it would rewrite cluster shapes that are
-  correct (4- and 8-CTA shapes on the B200, including the FP4 algorithms 70 / 71), with unverified results and
-  a throughput cost.
-- `ltguard.c` does not check the GPU architecture. Whoever injects it has to decide per node, e.g. set
-  `LD_PRELOAD` only on Hopper nodes or set `LTGUARD_DISABLE=1` elsewhere.
+- On Blackwell there is nothing to guard against, and the guard has **not been validated there**: every B200 and
+  RTX PRO 6000 result in the tables of this repository is unguarded (the only guarded Blackwell run is the
+  4-shape check mentioned below). Forcing it on would rewrite cluster shapes that are correct (4- and 8-CTA
+  shapes on the B200, including the FP4 algorithms 70 / 71), with unverified results and a throughput cost.
+- `ltguard.c` checks the GPU architecture itself. cuBLASLt is always called with a CUDA context in place, so
+  the first time the guard meets a large cluster shape it reads the compute capability of the current
+  context's device (`cuCtxGetDevice` + `cuDeviceGetAttribute`, read-only) and rewrites only when the major
+  version equals `LTGUARD_CC` (default 9 = Hopper; `LTGUARD_CC=0` = every GPU). If the capability cannot be
+  determined the guard stays active. The summary line reports it:
+  `device CC major=10 guarded CC=9 skipped (other architecture)=4`.
+  **Status of this check:** verified on the B200 (default: all calls skipped; `LTGUARD_CC=10`: calls
+  rewritten, results correct for 4 FP16 shapes on the full GPU). The correctness and throughput numbers in
+  this section were measured on the H200 with the build before the check was added; the H200 re-run of this
+  build is still to be done.
 - H100 was not tested. It has the same architecture and SM count as the H200, so the same behaviour is
   expected but not verified.
 
